@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 
     'use strict';
 
-    var ip = require('ip').address();
+    var address = require('ip').address();
 
     grunt.initConfig({
         srcDir: 'src',
@@ -126,11 +126,11 @@ module.exports = function(grunt) {
         connect: {
             demo: {
                 options: {
-                    hostname: ip,
+                    hostname: address,
                     directory: 'test',
                     port: '8001',
                     debug: true,
-                    open: 'http://' + ip + ':8001/test/less/demo.html',
+                    open: 'http://' + address + ':8001/test/less/demo.html',
                     keepalive: true
                 }
             }
