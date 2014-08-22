@@ -10,7 +10,7 @@
 
 		* <%=variable%>borderColor --- etc, #666
 
-		* <%=variable%>direction --- top, right, bottom, left, topleft, topright, bottomleft, bottomright
+		* <%=variable%>direction --- top | right | bottom | left | topleft | topright | bottomleft | bottomright
 
 **2. example**
 

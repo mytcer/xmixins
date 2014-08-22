@@ -6,7 +6,7 @@
 
 	param：
 
-		* <%=variable%>cutway --- ellipsis || clip (default value)
+		* <%=variable%>cutway --- ellipsis | clip (default value)
 
 **2. example**
 

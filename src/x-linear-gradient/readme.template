@@ -6,7 +6,7 @@
 
 	param：
 
-		* <%=variable%>direction --- to bottom || to right
+		* <%=variable%>direction --- to bottom | to right
 
 **2. example**
 

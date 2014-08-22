@@ -6,7 +6,7 @@
 
 	param：
 
-		* $direction --- all (default value), top, left, bottom, left
+		* $direction --- all (default value) | top | left | bottom | left
 
 **2. example**
 
@@ -42,7 +42,7 @@
 
 		* $borderColor --- etc, #666
 
-		* $direction --- top, right, bottom, left, topleft, topright, bottomleft, bottomright
+		* $direction --- top | right | bottom | left | topleft | topright | bottomleft | bottomright
 
 **2. example**
 
@@ -67,6 +67,10 @@
 **1. usage**
 
 	syntax：@include x-box-sizing($model);
+
+	param：
+
+		* $model --- content-box | border-box | inherit
 
 **2. example**
 
@@ -121,7 +125,7 @@
 
 	param：
 
-		* $direction --- to bottom || to right
+		* $direction --- to bottom | to right
 
 **2. example**
 
@@ -161,7 +165,7 @@
 
 	param：
 
-		* $cutway --- ellipsis || clip (default value)
+		* $cutway --- ellipsis | clip (default value)
 
 **2. example**
 

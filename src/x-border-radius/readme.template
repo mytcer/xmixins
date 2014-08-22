@@ -6,7 +6,7 @@
 
 	param：
 
-		* <%=variable%>direction --- all (default value), top, left, bottom, left
+		* <%=variable%>direction --- all (default value) | top | left | bottom | left
 
 **2. example**
 

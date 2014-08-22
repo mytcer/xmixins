@@ -4,6 +4,10 @@
 
 	syntax：<%=include%>x-box-sizing(<%=variable%>model);
 
+	param：
+
+		* <%=variable%>model --- content-box | border-box | inherit
+
 **2. example**
 
 	div {
