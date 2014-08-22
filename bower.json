@@ -26,6 +26,8 @@
         "tasks",
         "fragment",
         ".bowerrc",
+        ".jshintrc",
+        ".jshintignore",
         ".gitignore",
         ".sass-cache",
         "bower.json",
