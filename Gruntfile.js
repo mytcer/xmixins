@@ -139,7 +139,12 @@ module.exports = function(grunt) {
         // 监控文件改动
         watch: {
             all: {
-                files: ['<%= srcDir %>/**/*', '!<%= srcDir %>/**/*.tmp', '<%= fragmentDir %>/*.html', 'tasks/*.js'],
+                files: [
+                    '<%= srcDir %>/**/*',
+                    '!<%= srcDir %>/**/*.tmp',
+                    '<%= fragmentDir %>/*.html',
+                    'tasks/*.js'
+                ],
                 tasks: ['default']
             }
         },
