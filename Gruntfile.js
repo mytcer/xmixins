@@ -1,5 +1,9 @@
 module.exports = function(grunt) {
 
+    'use strict';
+
+    var ip = require('ip').address();
+
     grunt.initConfig({
         srcDir: 'src',
         docDir: 'doc',
@@ -122,11 +126,11 @@ module.exports = function(grunt) {
         connect: {
             demo: {
                 options: {
-                    hostname: '127.0.0.1',
+                    hostname: ip,
                     directory: 'test',
                     port: '8001',
                     debug: true,
-                    open: 'http://127.0.0.1:8001/test/less/demo.html',
+                    open: 'http://' + ip + ':8001/test/less/demo.html',
                     keepalive: true
                 }
             }
@@ -135,7 +139,7 @@ module.exports = function(grunt) {
         // 监控文件改动
         watch: {
             all: {
-                files: ['<%= srcDir %>/**/*', '<%= fragmentDir %>/*.html', 'tasks/*.js'],
+                files: ['<%= srcDir %>/**/*', '!<%= srcDir %>/**/*.tmp', '<%= fragmentDir %>/*.html', 'tasks/*.js'],
                 tasks: ['default']
             }
         },

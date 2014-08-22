@@ -3,8 +3,8 @@
  * @link css-tricks.com/css3-gradients/
  */
 .x-linear-gradient(@direction, @startColor, @endColor) {
-	@xdirection:null;
-	@ie-direction:null;
+	@xdirection: null;
+	@ie-direction: null;
 
 	.x-if-simulater () when ("@{direction}" = "to bottom") {
 		@xdirection: top;
