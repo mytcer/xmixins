@@ -1,0 +1,11 @@
+### x-min-height
+
+**1. usage**
+
+	syntax：<%=include%>x-min-height(<%=variable%>height);
+
+**2. example**
+
+	div {
+		<%=include%>x-min-height(100px);
+	}

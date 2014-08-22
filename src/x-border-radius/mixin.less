@@ -1,0 +1,37 @@
+/**
+ * x-border-radius
+ * @link css-tricks.com/almanac/properties/b/border-radius/
+ */
+.x-border-radius(@radius, @direction:all) {
+	.x-if-simulater () when (@direction = all) {
+	    -moz-border-radius: @radius;
+	    -webkit-border-radius: @radius;
+	    border-radius: @radius;
+	}
+
+	.x-if-simulater () when (@direction = top) {
+	    -moz-border-radius: @radius @radius 0 0;
+	    -webkit-border-radius: @radius @radius 0 0;
+	    border-radius: @radius @radius 0 0;
+	}
+
+	.x-if-simulater () when (@direction = right) {
+	    -moz-border-radius: 0 @radius @radius 0;
+	    -webkit-border-radius: 0 @radius @radius 0;
+	    border-radius: 0 @radius @radius 0;
+	}
+
+	.x-if-simulater () when (@direction = bottom) {
+	    -moz-border-radius: 0 0 @radius @radius;
+	    -webkit-border-radius: 0 0 @radius @radius;
+	    border-radius: 0 0 @radius @radius;
+	}
+
+	.x-if-simulater () when (@direction = left) {
+	    -moz-border-radius: @radius 0 0 @radius;
+	    -webkit-border-radius: @radius 0 0 @radius;
+	    border-radius: @radius 0 0 @radius;
+	}
+	
+	.x-if-simulater();
+}

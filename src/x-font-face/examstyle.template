@@ -1,0 +1,9 @@
+<%=include%>x-font-face("iconfont", "http://t.tbcdn.cn/g/thx/brix/fonts/uxiconfont");
+
+#x-font-face-example {
+	.iconfont {
+		font-family: "iconfont";
+		font-size: 32px;
+		font-style: normal;
+	}
+}

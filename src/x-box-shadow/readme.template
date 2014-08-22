@@ -1,0 +1,11 @@
+### x-box-shadow
+
+**1. usage**
+
+	syntax：<%=include%>x-box-shadow(<%=variable%>params);
+
+**2. example**
+
+	div {
+		<%=include%>x-box-shadow(5px 5px 3px #000);
+	}

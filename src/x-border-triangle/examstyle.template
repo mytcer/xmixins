@@ -1,0 +1,29 @@
+#x-border-triangle-example {
+	.triangle {
+		display: inline-block;
+	}
+	.top {
+		<%=include%>x-border-triangle(10px, #666, top);	
+	}
+	.bottom {
+		<%=include%>x-border-triangle(10px, #666, bottom);	
+	}
+	.left {
+		<%=include%>x-border-triangle(10px, #666, left);	
+	}
+	.right {
+		<%=include%>x-border-triangle(10px, #666, right);	
+	}
+	.topleft {
+		<%=include%>x-border-triangle(10px, #666, topleft);	
+	}
+	.topright {
+		<%=include%>x-border-triangle(10px, #666, topright);	
+	}
+	.bottomleft {
+		<%=include%>x-border-triangle(10px, #666, bottomleft);	
+	}
+	.bottomright {
+		<%=include%>x-border-triangle(10px, #666, bottomright);	
+	}
+}

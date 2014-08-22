@@ -1,0 +1,11 @@
+### x-clearfix
+
+**1. usage**
+
+	syntax：<%=include%>x-clearfix();
+
+**2. example**
+
+	div {
+		<%=include%>x-clearfix();
+	}

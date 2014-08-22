@@ -1,0 +1,13 @@
+#x-linear-gradient-example {
+	p {
+		height: 50px;
+	}
+
+	.horizontal {
+		<%=include%>x-linear-gradient(to right, #f00, green);		
+	}
+
+	.vertical {
+		<%=include%>x-linear-gradient(to bottom, #f00, green);
+	}
+}

@@ -1,0 +1,162 @@
+@mixin x-border-radius($radius, $direction:all) {
+	@if ($direction == all) {
+	    -moz-border-radius: $radius;
+	    -webkit-border-radius: $radius;
+	    border-radius: $radius;
+	}
+
+	@if ($direction == top) {
+	    -moz-border-radius: $radius $radius 0 0;
+	    -webkit-border-radius: $radius $radius 0 0;
+	    border-radius: $radius $radius 0 0;
+	}
+
+	@if ($direction == right) {
+	    -moz-border-radius: 0 $radius $radius 0;
+	    -webkit-border-radius: 0 $radius $radius 0;
+	    border-radius: 0 $radius $radius 0;
+	}
+
+	@if ($direction == bottom) {
+	    -moz-border-radius: 0 0 $radius $radius;
+	    -webkit-border-radius: 0 0 $radius $radius;
+	    border-radius: 0 0 $radius $radius;
+	}
+
+	@if ($direction == left) {
+	    -moz-border-radius: $radius 0 0 $radius;
+	    -webkit-border-radius: $radius 0 0 $radius;
+	    border-radius: $radius 0 0 $radius;
+	}
+}
+
+@mixin x-border-triangle($borderWidth, $borderColor, $direction) {
+	$default-border-style: solid;
+
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border-width: $borderWidth;
+	border-style: $default-border-style;
+	_border-style: dashed;
+	border-color: transparent;
+
+	@if ($direction == top) {
+		border-bottom-color: $borderColor;
+		_border-bottom-style: $default-border-style;
+	}
+
+	@if ($direction == right) {
+		border-left-color: $borderColor;
+		_border-left-style: $default-border-style;
+	}
+
+	@if ($direction == bottom) {
+		border-top-color: $borderColor;
+		_border-top-style: $default-border-style;
+	}
+
+	@if ($direction == left) {
+		border-right-color: $borderColor;
+		_border-right-style: $default-border-style;
+	}
+
+	@if ($direction == topleft) {
+		border-top-color: $borderColor;
+		border-left-color: $borderColor;
+		_border-top-style: $default-border-style;
+		_border-left-style: $default-border-style;
+	}
+
+	@if ($direction == topright) {
+		border-top-color: $borderColor;
+		border-right-color: $borderColor;
+		_border-top-style: $default-border-style;
+		_border-right-style: $default-border-style;
+	}
+
+	@if ($direction == bottomleft) {
+		border-bottom-color: $borderColor;
+		border-left-color: $borderColor;
+		_border-bottom-style: $default-border-style;
+		_border-left-style: $default-border-style;
+	}
+
+	@if ($direction == bottomright) {
+		border-bottom-color: $borderColor;
+		border-right-color: $borderColor;
+		_border-bottom-style: $default-border-style;
+		_border-right-style: $default-border-style;
+	}
+}
+@mixin x-box-shadow($param) {
+ 	   -moz-box-shadow: $param;
+ 	-webkit-box-shadow: $param; 
+  	        box-shadow: $param;	
+}
+@mixin x-box-sizing($model) {
+	-webkit-box-sizing: $model;
+	   -moz-box-sizing: $model;
+	        box-sizing: $model;
+}
+@mixin x-clearfix() {
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+	*zoom: 1;
+}
+@mixin x-font-face($fontName, $noSuffixFontUrl) {
+	@font-face {
+	  font-family: "#{$fontName}";
+	  src: url("#{$noSuffixFontUrl}.eot");
+	  src: url("#{$noSuffixFontUrl}.eot?#iefix") format("embedded-opentype"),
+	       url("#{$noSuffixFontUrl}.woff") format("woff"),
+	       url("#{$noSuffixFontUrl}.ttf")  format("truetype"),
+	       url("#{$noSuffixFontUrl}.svg#svgFontName") format("svg");
+	}	
+}
+@mixin x-inline-block() {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+@mixin x-linear-gradient($direction, $startColor, $endColor) {
+	$xdirection: null;
+	$ie-direction: null;
+
+	@if ("#{$direction}" == "to bottom") {
+		$xdirection: top;
+		$ie-direction: 0;
+	}
+	@if ("#{$direction}" == "to right") {
+		$xdirection: left;
+		$ie-direction: 1;
+	}
+	
+    background: -webkit-linear-gradient($xdirection, $startColor, $endColor);
+    background: -moz-linear-gradient($xdirection, $startColor, $endColor);
+    background: -ms-linear-gradient($xdirection, $startColor, $endColor);
+    background: -o-linear-gradient($xdirection, $startColor, $endColor);
+    background: linear-gradient($direction, $startColor, $endColor);
+    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=$startColor,endcolorstr=$endColor,gradientType=$ie-direction);
+}
+@mixin x-min-height($height) {
+	min-height: $height;
+	_height: $height;
+}
+@mixin x-opacity($opacity) {
+	$opacityIE: ($opacity * 100);
+	opacity: $opacity;
+	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacityIE); // IE 8 & 9
+	filter: alpha(opacity=$opacityIE); // IE 6 & 7
+}
+@mixin x-text-overflow($cutway: clip) {
+	overflow: hidden;
+  	text-overflow: $cutway;
+  	white-space: nowrap;
+}

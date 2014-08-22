@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf8">
+	<title>x-mixins test page</title>
+	<link rel="stylesheet" href="demo.css" />
+	<style>
+		.demo-nav {padding: 15px 0 20px 0;text-align: center;}
+		.demo-nav a {margin: 0 15px;}
+		.box {
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+			width: 200px;
+			min-height: 100px;
+			_min-height: 100px;
+			margin: 10px;
+			vertical-align: top;
+			line-height: 2;
+			text-align: center;
+			border: 1px solid #ccc;
+		}
+	</style>
+</head>
+<body>
+<p class="demo-nav">
+	<a href="../less/demo.html">demo for less</a>
+	<a href="../sass/demo.html">demo for sass</a>
+	<a href="../styl/demo.html">demo for stylus</a>
+</p>
+
+<div id="x-border-radius-example" class="box">x-border-radius</div>
+<div id="x-border-top-radius-example" class="box">x-border-radius top</div>
+<div id="x-border-right-radius-example" class="box">x-border-radius right</div>
+<div id="x-border-bottom-radius-example" class="box">x-border-radius bottom</div>
+<div id="x-border-left-radius-example" class="box">x-border-radius left</div>
+<div id="x-border-triangle-example" class="box">
+	<p>x-border-triangle</p>
+	<i class="triangle top"></i>
+	<i class="triangle right"></i>
+	<i class="triangle bottom"></i>
+	<i class="triangle left"></i>
+	<i class="triangle topleft"></i>
+	<i class="triangle topright"></i>
+	<i class="triangle bottomleft"></i>
+	<i class="triangle bottomright"></i>
+</div>
+<div id="x-box-shadow-example" class="box">x-box-shadow</div>
+<div id="x-box-sizing-example" class="box">x-box-sizing</div>
+<div id="x-clearfix-example" class="box">
+	<p>x-clearfix</p>
+	<div class="subbox clearfix">
+		<p>see me by clearfix</p>
+	</div>
+	<div class="subbox no-clearfix">
+		<p>can't see me</p>
+	</div>
+</div>
+<div id="x-font-face-example" class="box">
+	<p>x-font-face</p>
+	<i class="iconfont">&#60</i>
+</div>
+<div id="x-inline-block-example" class="box">
+	<p>x-inline-block</p>
+	<span>A</span>
+	<span>B</span>
+</div>
+<div id="x-linear-gradient-example" class="box">
+	<p>x-linear-gradient</p>
+	<p class="horizontal"></p>
+	<p class="vertical"></p>
+</div>
+<div id="x-min-height-example" class="box">x-min-height</div>
+<div id="x-opacity-example" class="box">
+	<p>x-opacity</p>
+	<div></div>
+</div>
+<div id="x-text-overflow-example" class="box">测试x-text-overflow，有看到省略号吗</div>
+</body>
+</html>

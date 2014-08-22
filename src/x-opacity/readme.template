@@ -1,0 +1,11 @@
+### x-opacity
+
+**1. usage**
+
+	syntax：<%=include%>x-opacity(<%=variable%>opacity);
+
+**2. example**
+
+	div {
+		<%=include%>x-opacity(0.5);
+	}

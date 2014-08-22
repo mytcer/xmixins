@@ -1,0 +1,15 @@
+#x-border-radius-example {
+	<%=include%>x-border-radius(10px);
+}
+#x-border-top-radius-example {
+	<%=include%>x-border-radius(10px, top);
+}
+#x-border-right-radius-example {
+	<%=include%>x-border-radius(10px, right);
+}
+#x-border-bottom-radius-example {
+	<%=include%>x-border-radius(10px, bottom);
+}
+#x-border-left-radius-example {
+	<%=include%>x-border-radius(10px, left);
+}

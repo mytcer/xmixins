@@ -1,0 +1,31 @@
+### x-border-radius
+
+**1. usage**
+
+	syntax：<%=include%>x-border-radius(<%=variable%>radius, <%=variable%>direction);
+
+	param：
+
+		* <%=variable%>direction --- all (default value), top, left, bottom, left
+
+**2. example**
+
+	div {
+		<%=include%>x-border-radius(3px);  // set all corners
+	}
+
+	div {
+		<%=include%>x-border-radius(3px, top);  // set topleft and topright corners
+	}
+
+	div {
+		<%=include%>x-border-radius(3px, right);  // set topright and bottomright corners
+	}
+
+	div {
+		<%=include%>x-border-radius(3px, bottom);  // set bottomleft and bottomright corners
+	}
+
+	div {
+		<%=include%>x-border-radius(3px, left);  // set topleft and bottomleft corners
+	}

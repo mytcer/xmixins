@@ -1,0 +1,19 @@
+### x-border-triangle
+
+**1. usage**
+
+	syntax：<%=include%>x-border-triangle(<%=variable%>borderWidth, <%=variable%>borderColor, <%=variable%>direction);
+
+	param：
+
+		* <%=variable%>borderWidth --- etc, 5px
+
+		* <%=variable%>borderColor --- etc, #666
+
+		* <%=variable%>direction --- top, right, bottom, left, topleft, topright, bottomleft, bottomright
+
+**2. example**
+
+	div {
+		<%=include%>x-border-triangle(5px, #666, top);
+	}

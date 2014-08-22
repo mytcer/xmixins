@@ -1,0 +1,11 @@
+### x-inline-block
+
+**1. usage**
+
+	syntax：<%=include%>x-inline-block();
+
+**2. example**
+
+	div {
+		<%=include%>x-inline-block();
+	}

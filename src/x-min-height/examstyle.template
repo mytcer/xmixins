@@ -1,0 +1,4 @@
+#x-min-height-example {
+	height: auto;
+	<%=include%>x-min-height(200px);
+}

@@ -1,0 +1,15 @@
+### x-text-overflow
+
+**1. usage**
+
+	syntax：<%=include%>x-text-overflow(<%=variable%>cutway);
+
+	param：
+
+		* <%=variable%>cutway --- ellipsis || clip (default value)
+
+**2. example**
+
+	div {
+		<%=include%>x-text-overflow(ellipsis);
+	}

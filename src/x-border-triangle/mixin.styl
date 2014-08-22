@@ -1,0 +1,63 @@
+/**
+ * x-border-triangle
+ * @link css-tricks.com/examples/ShapesOfCSS/
+ */
+x-border-triangle($borderWidth, $borderColor, $direction) {
+	$default-border-style = solid;
+
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border-width: $borderWidth;
+	border-style: $default-border-style;
+	_border-style: dashed;
+	border-color: transparent;
+
+	if ($direction == top) {
+		border-bottom-color: $borderColor;
+		_border-bottom-style: $default-border-style;
+	}
+
+	if ($direction == right) {
+		border-left-color: $borderColor;
+		_border-left-style: $default-border-style;
+	}
+
+	if ($direction == bottom) {
+		border-top-color: $borderColor;
+		_border-top-style: $default-border-style;
+	}
+
+	if ($direction == left) {
+		border-right-color: $borderColor;
+		_border-right-style: $default-border-style;
+	}
+
+	if ($direction == topleft) {
+		border-top-color: $borderColor;
+		border-left-color: $borderColor;
+		_border-top-style: $default-border-style;
+		_border-left-style: $default-border-style;
+	}
+
+	if ($direction == topright) {
+		border-top-color: $borderColor;
+		border-right-color: $borderColor;
+		_border-top-style: $default-border-style;
+		_border-right-style: $default-border-style;
+	}
+
+	if ($direction == bottomleft) {
+		border-bottom-color: $borderColor;
+		border-left-color: $borderColor;
+		_border-bottom-style: $default-border-style;
+		_border-left-style: $default-border-style;
+	}
+
+	if ($direction == bottomright) {
+		border-bottom-color: $borderColor;
+		border-right-color: $borderColor;
+		_border-bottom-style: $default-border-style;
+		_border-right-style: $default-border-style;
+	}
+}

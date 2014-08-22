@@ -1,0 +1,13 @@
+### x-font-face
+
+**1. usage**
+
+	syntax：<%=include%>x-font-face(<%=variable%>fontName, <%=variable%>fontUrl); // note：font url without a file extension
+
+**2. example**
+
+	<%=include%>x-font-face('iconfont', 'http://x.cdn.com/iconfont');	
+
+	div {
+		font-family: 'iconfont';
+	}

@@ -1,0 +1,15 @@
+### x-linear-gradient
+
+**1. usage**
+
+	syntax：<%=include%>x-linear-gradient(<%=variable%>direction, <%=variable%>startColor, <%=variable%>endColor);
+
+	param：
+
+		* <%=variable%>direction --- to bottom || to right
+
+**2. example**
+
+	div {
+		<%=include%>x-linear-gradient(to bottom, #000, #fff);
+	}

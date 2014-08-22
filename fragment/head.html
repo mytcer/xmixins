@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf8">
+	<title>x-mixins test page</title>
+	<link rel="stylesheet" href="demo.css" />
+	<style>
+		.demo-nav {padding: 15px 0 20px 0;text-align: center;}
+		.demo-nav a {margin: 0 15px;}
+		.box {
+			display: inline-block;
+			*display: inline;
+			*zoom: 1;
+			width: 200px;
+			min-height: 100px;
+			_min-height: 100px;
+			margin: 10px;
+			vertical-align: top;
+			line-height: 2;
+			text-align: center;
+			border: 1px solid #ccc;
+		}
+	</style>
+</head>
+<body>
+<p class="demo-nav">
+	<a href="../less/demo.html">demo for less</a>
+	<a href="../sass/demo.html">demo for sass</a>
+	<a href="../styl/demo.html">demo for stylus</a>
+</p>

@@ -1,0 +1,6 @@
+#x-inline-block-example span {
+	<%=include%>x-inline-block();
+	margin-right: 10px;
+	padding: 5px;
+	background: #ccc;
+}

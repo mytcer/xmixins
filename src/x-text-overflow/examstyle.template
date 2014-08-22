@@ -1,0 +1,3 @@
+#x-text-overflow-example {
+	<%=include%>x-text-overflow(ellipsis);
+}

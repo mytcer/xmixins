@@ -1,0 +1,167 @@
+.x-border-radius(@radius, @direction:all) {
+	.x-if-simulater () when (@direction = all) {
+	    -moz-border-radius: @radius;
+	    -webkit-border-radius: @radius;
+	    border-radius: @radius;
+	}
+
+	.x-if-simulater () when (@direction = top) {
+	    -moz-border-radius: @radius @radius 0 0;
+	    -webkit-border-radius: @radius @radius 0 0;
+	    border-radius: @radius @radius 0 0;
+	}
+
+	.x-if-simulater () when (@direction = right) {
+	    -moz-border-radius: 0 @radius @radius 0;
+	    -webkit-border-radius: 0 @radius @radius 0;
+	    border-radius: 0 @radius @radius 0;
+	}
+
+	.x-if-simulater () when (@direction = bottom) {
+	    -moz-border-radius: 0 0 @radius @radius;
+	    -webkit-border-radius: 0 0 @radius @radius;
+	    border-radius: 0 0 @radius @radius;
+	}
+
+	.x-if-simulater () when (@direction = left) {
+	    -moz-border-radius: @radius 0 0 @radius;
+	    -webkit-border-radius: @radius 0 0 @radius;
+	    border-radius: @radius 0 0 @radius;
+	}
+	
+	.x-if-simulater();
+}
+
+.x-border-triangle(@borderWidth, @borderColor, @direction) {
+	@default-border-style: solid;
+
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	border-width: @borderWidth;
+	border-style: @default-border-style;
+	_border-style: dashed;
+	border-color: transparent;
+
+	.x-if-simulater () when (@direction = top) {
+		border-bottom-color: @borderColor;
+		_border-bottom-style: @default-border-style;
+	}
+
+	.x-if-simulater () when (@direction = right) {
+		border-left-color: @borderColor;
+		_border-left-style: @default-border-style;
+	}
+
+	.x-if-simulater () when (@direction = bottom) {
+		border-top-color: @borderColor;
+		_border-top-style: @default-border-style;
+	}
+
+	.x-if-simulater () when (@direction = left) {
+		border-right-color: @borderColor;
+		_border-right-style: @default-border-style;
+	}
+
+	.x-if-simulater () when (@direction = topleft) {
+		border-top-color: @borderColor;
+		border-left-color: @borderColor;
+		_border-top-style: @default-border-style;
+		_border-left-style: @default-border-style;
+	}
+
+	.x-if-simulater () when (@direction = topright) {
+		border-top-color: @borderColor;
+		border-right-color: @borderColor;
+		_border-top-style: @default-border-style;
+		_border-right-style: @default-border-style;
+	}
+
+	.x-if-simulater () when (@direction = bottomleft) {
+		border-bottom-color: @borderColor;
+		border-left-color: @borderColor;
+		_border-bottom-style: @default-border-style;
+		_border-left-style: @default-border-style;
+	}
+
+	.x-if-simulater () when (@direction = bottomright) {
+		border-bottom-color: @borderColor;
+		border-right-color: @borderColor;
+		_border-bottom-style: @default-border-style;
+		_border-right-style: @default-border-style;
+	}
+
+	.x-if-simulater();
+}
+.x-box-shadow(@params) {
+ 	   -moz-box-shadow: @params;
+ 	-webkit-box-shadow: @params; 
+  	        box-shadow: @params;
+ }
+.x-box-sizing(@model) {
+	-webkit-box-sizing: @model;
+	   -moz-box-sizing: @model;
+	        box-sizing: @model;
+}
+.x-clearfix() {
+	&:before,
+	&:after {
+		content: " ";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+	*zoom: 1;
+}
+.x-font-face(@fontName, @noSuffixFontUrl) {
+	@font-face {
+	  font-family: "@{fontName}";
+	  src: url("@{noSuffixFontUrl}.eot");
+	  src: url("@{noSuffixFontUrl}.eot?#iefix") format("embedded-opentype"),
+	       url("@{noSuffixFontUrl}.woff") format("woff"),
+	       url("@{noSuffixFontUrl}.ttf")  format("truetype"),
+	       url("@{noSuffixFontUrl}.svg#svgFontName") format("svg");
+	}	
+}
+.x-inline-block() {
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+}
+.x-linear-gradient(@direction, @startColor, @endColor) {
+	@xdirection:null;
+	@ie-direction:null;
+
+	.x-if-simulater () when ("@{direction}" = "to bottom") {
+		@xdirection: top;
+		@ie-direction: 0;
+	}
+	.x-if-simulater () when ("@{direction}" = "to right") {
+		@xdirection: left;
+		@ie-direction: 1;
+	}
+	.x-if-simulater();
+    background: -webkit-linear-gradient(@xdirection, @startColor, @endColor);
+    background: -moz-linear-gradient(@xdirection, @startColor, @endColor);
+    background: -ms-linear-gradient(@xdirection, @startColor, @endColor);
+    background: -o-linear-gradient(@xdirection, @startColor, @endColor);
+    background: linear-gradient(@direction, @startColor, @endColor);
+    filter: ~"progid:DXImageTransform.Microsoft.gradient(startcolorstr=@{startColor},endcolorstr=@{endColor},gradientType=@{ie-direction})";
+}
+.x-min-height(@height) {
+	min-height: @height;
+	_height: @height;
+}
+
+.x-opacity(@opacity) {
+	@opacityIE: (@opacity * 100);
+	opacity: @opacity;
+	-ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(Opacity=@{opacityIE})"; // IE 8 & 9
+	filter: ~"alpha(opacity=@{opacityIE})"; // IE 6 & 7
+}
+.x-text-overflow(@cutway: clip) {
+	overflow: hidden;
+  	text-overflow: @cutway;
+  	white-space: nowrap;
+}

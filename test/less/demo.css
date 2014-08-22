@@ -1,0 +1,219 @@
+#x-border-radius-example {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+#x-border-top-radius-example {
+  -moz-border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+}
+#x-border-right-radius-example {
+  -moz-border-radius: 0 10px 10px 0;
+  -webkit-border-radius: 0 10px 10px 0;
+  border-radius: 0 10px 10px 0;
+}
+#x-border-bottom-radius-example {
+  -moz-border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0 0 10px 10px;
+  border-radius: 0 0 10px 10px;
+}
+#x-border-left-radius-example {
+  -moz-border-radius: 10px 0 0 10px;
+  -webkit-border-radius: 10px 0 0 10px;
+  border-radius: 10px 0 0 10px;
+}
+#x-border-triangle-example .triangle {
+  display: inline-block;
+}
+#x-border-triangle-example .top {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-width: 10px;
+  border-style: solid;
+  _border-style: dashed;
+  border-color: transparent;
+  border-bottom-color: #666666;
+  _border-bottom-style: solid;
+}
+#x-border-triangle-example .bottom {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-width: 10px;
+  border-style: solid;
+  _border-style: dashed;
+  border-color: transparent;
+  border-top-color: #666666;
+  _border-top-style: solid;
+}
+#x-border-triangle-example .left {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-width: 10px;
+  border-style: solid;
+  _border-style: dashed;
+  border-color: transparent;
+  border-right-color: #666666;
+  _border-right-style: solid;
+}
+#x-border-triangle-example .right {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-width: 10px;
+  border-style: solid;
+  _border-style: dashed;
+  border-color: transparent;
+  border-left-color: #666666;
+  _border-left-style: solid;
+}
+#x-border-triangle-example .topleft {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-width: 10px;
+  border-style: solid;
+  _border-style: dashed;
+  border-color: transparent;
+  border-top-color: #666666;
+  border-left-color: #666666;
+  _border-top-style: solid;
+  _border-left-style: solid;
+}
+#x-border-triangle-example .topright {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-width: 10px;
+  border-style: solid;
+  _border-style: dashed;
+  border-color: transparent;
+  border-top-color: #666666;
+  border-right-color: #666666;
+  _border-top-style: solid;
+  _border-right-style: solid;
+}
+#x-border-triangle-example .bottomleft {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-width: 10px;
+  border-style: solid;
+  _border-style: dashed;
+  border-color: transparent;
+  border-bottom-color: #666666;
+  border-left-color: #666666;
+  _border-bottom-style: solid;
+  _border-left-style: solid;
+}
+#x-border-triangle-example .bottomright {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  border-width: 10px;
+  border-style: solid;
+  _border-style: dashed;
+  border-color: transparent;
+  border-bottom-color: #666666;
+  border-right-color: #666666;
+  _border-bottom-style: solid;
+  _border-right-style: solid;
+}
+#x-box-shadow-example {
+  -moz-box-shadow: 5px 5px 3px #000000;
+  -webkit-box-shadow: 5px 5px 3px #000000;
+  box-shadow: 5px 5px 3px #000000;
+}
+#x-box-sizing-example {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 5px;
+}
+#x-clearfix-example {
+  line-height: 0;
+}
+#x-clearfix-example .subbox {
+  margin-bottom: 5px;
+  background: green;
+  color: #fff;
+}
+#x-clearfix-example .subbox p {
+  float: left;
+}
+#x-clearfix-example .clearfix {
+  *zoom: 1;
+}
+#x-clearfix-example .clearfix:before,
+#x-clearfix-example .clearfix:after {
+  content: " ";
+  display: table;
+}
+#x-clearfix-example .clearfix:after {
+  clear: both;
+}
+@font-face {
+  font-family: "iconfont";
+  src: url("http://t.tbcdn.cn/g/thx/brix/fonts/uxiconfont.eot");
+  src: url("http://t.tbcdn.cn/g/thx/brix/fonts/uxiconfont.eot?#iefix") format("embedded-opentype"), url("http://t.tbcdn.cn/g/thx/brix/fonts/uxiconfont.woff") format("woff"), url("http://t.tbcdn.cn/g/thx/brix/fonts/uxiconfont.ttf") format("truetype"), url("http://t.tbcdn.cn/g/thx/brix/fonts/uxiconfont.svg#svgFontName") format("svg");
+}
+#x-font-face-example .iconfont {
+  font-family: "iconfont";
+  font-size: 32px;
+  font-style: normal;
+}
+#x-inline-block-example span {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  margin-right: 10px;
+  padding: 5px;
+  background: #ccc;
+}
+#x-linear-gradient-example p {
+  height: 50px;
+}
+#x-linear-gradient-example .horizontal {
+  background: -webkit-linear-gradient(null, #ff0000, #008000);
+  background: -moz-linear-gradient(null, #ff0000, #008000);
+  background: -ms-linear-gradient(null, #ff0000, #008000);
+  background: -o-linear-gradient(null, #ff0000, #008000);
+  background: linear-gradient(to right, #ff0000, #008000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ff0000,endcolorstr=#008000,gradientType=null);
+}
+#x-linear-gradient-example .vertical {
+  background: -webkit-linear-gradient(null, #ff0000, #008000);
+  background: -moz-linear-gradient(null, #ff0000, #008000);
+  background: -ms-linear-gradient(null, #ff0000, #008000);
+  background: -o-linear-gradient(null, #ff0000, #008000);
+  background: linear-gradient(to bottom, #ff0000, #008000);
+  filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ff0000,endcolorstr=#008000,gradientType=null);
+}
+#x-min-height-example {
+  height: auto;
+  min-height: 200px;
+  _height: 200px;
+}
+#x-opacity-example {
+  position: relative;
+}
+#x-opacity-example div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.3;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);
+  filter: alpha(opacity=30);
+}
+#x-text-overflow-example {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

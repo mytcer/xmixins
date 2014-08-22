@@ -1,0 +1,5 @@
+#x-box-sizing-example {
+	<%=include%>x-box-sizing(border-box);
+	margin: 5px;
+	padding: 5px;
+}

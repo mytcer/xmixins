@@ -1,0 +1,24 @@
+/**
+ * x-linear-gradient
+ * @link css-tricks.com/css3-gradients/
+ */
+.x-linear-gradient(@direction, @startColor, @endColor) {
+	@xdirection:null;
+	@ie-direction:null;
+
+	.x-if-simulater () when ("@{direction}" = "to bottom") {
+		@xdirection: top;
+		@ie-direction: 0;
+	}
+	.x-if-simulater () when ("@{direction}" = "to right") {
+		@xdirection: left;
+		@ie-direction: 1;
+	}
+	.x-if-simulater();
+    background: -webkit-linear-gradient(@xdirection, @startColor, @endColor);
+    background: -moz-linear-gradient(@xdirection, @startColor, @endColor);
+    background: -ms-linear-gradient(@xdirection, @startColor, @endColor);
+    background: -o-linear-gradient(@xdirection, @startColor, @endColor);
+    background: linear-gradient(@direction, @startColor, @endColor);
+    filter: ~"progid:DXImageTransform.Microsoft.gradient(startcolorstr=@{startColor},endcolorstr=@{endColor},gradientType=@{ie-direction})";
+}

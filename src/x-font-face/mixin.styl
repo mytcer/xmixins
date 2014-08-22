@@ -1,0 +1,14 @@
+/**
+ * x-font-face
+ * @link css-tricks.com/snippets/css/using-font-face/
+ */
+x-font-face($fontName, $noSuffixFontUrl) {
+	@font-face {
+	  font-family: $fontName + "";
+	  src: url($noSuffixFontUrl + ".eot");
+	  src: url($noSuffixFontUrl + ".eot?#iefix") format("embedded-opentype"),
+	       url($noSuffixFontUrl + ".woff") format("woff"),
+	       url($noSuffixFontUrl + ".ttf")  format("truetype"),
+	       url($noSuffixFontUrl + ".svg#svgFontName") format("svg");
+	}	
+}

@@ -1,0 +1,11 @@
+### x-box-sizing
+
+**1. usage**
+
+	syntax：<%=include%>x-box-sizing(<%=variable%>model);
+
+**2. example**
+
+	div {
+		<%=include%>x-box-sizing(border-box);
+	}
