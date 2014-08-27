@@ -105,6 +105,18 @@
 	}
 
 <br>
+### x-grayscale
+
+**1. usage**
+
+	syntax：.x-grayscale();
+
+**2. example**
+
+	img {
+		.x-grayscale();  // colour image into a gray image
+	}
+<br>
 ### x-inline-block
 
 **1. usage**

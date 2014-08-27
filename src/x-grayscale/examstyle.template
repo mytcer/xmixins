@@ -1,0 +1,5 @@
+#x-grayscale-example {
+	img {
+		<%=include%>x-grayscale();	
+	}
+}

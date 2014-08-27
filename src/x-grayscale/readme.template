@@ -1,0 +1,11 @@
+### x-grayscale
+
+**1. usage**
+
+	syntax：<%=include%>x-grayscale();
+
+**2. example**
+
+	img {
+		<%=include%>x-grayscale();  // colour image into a gray image
+	}
