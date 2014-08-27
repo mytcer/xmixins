@@ -1,3 +1,10 @@
+### v0.2.0
+
+| mixin name | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+|x-grayscale | 6~9 | √ | √ | √ | √ | √ |
+
+
 ### v0.1.0
 
 | mixin name | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
