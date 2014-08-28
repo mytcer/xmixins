@@ -1,6 +1,6 @@
 ### v0.2.1
 
-> bugfix：x-linear-gradient can't work in IE6~9
+> note：bugfix for x-linear-gradient mixin in IE6~9
 
 <br>
 
