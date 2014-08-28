@@ -1,6 +1,7 @@
 #x-border-triangle-example {
 	.triangle {
 		display: inline-block;
+		margin-right: 3px;
 	}
 	.top {
 		<%=include%>x-border-triangle(10px, #666, top);	

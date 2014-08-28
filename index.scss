@@ -153,7 +153,7 @@
     background: -ms-linear-gradient($xdirection, $startColor, $endColor);
     background: -o-linear-gradient($xdirection, $startColor, $endColor);
     background: linear-gradient($direction, $startColor, $endColor);
-    filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=$startColor,endcolorstr=$endColor,gradientType=$ie-direction);
+    filter: unquote("progid:DXImageTransform.Microsoft.gradient(startcolorstr=#{$startColor},endcolorstr=#{$endColor},gradientType=#{$ie-direction})");
 }
 @mixin x-min-height($height) {
 	min-height: $height;

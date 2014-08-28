@@ -6,11 +6,11 @@ x-linear-gradient($direction, $startColor, $endColor) {
 	$xdirection=null;
 	$ie-direction=null;
 
-	if ($direction + "" == "to bottom") {
+	if (join(",", $direction) == "to,bottom") {
 		$xdirection=top;
 		$ie-direction=0;		
 	}
-	if ($direction + "" == "to right") {
+	if (join(",", $direction) == "to,right") {
 		$xdirection=left;
 		$ie-direction=1;		
 	}
@@ -20,5 +20,5 @@ x-linear-gradient($direction, $startColor, $endColor) {
     background: -ms-linear-gradient($xdirection, $startColor, $endColor);
     background: -o-linear-gradient($xdirection, $startColor, $endColor);
     background: linear-gradient($direction, $startColor, $endColor);
-    filter unquote('progid:DXImageTransform.Microsoft.gradient(startcolorstr=' + $startColor + ',endcolorstr=' + $endColor + ',gradientType=' + $ie-direction + ')');
+    filter unquote("progid:DXImageTransform.Microsoft.gradient(startcolorstr=" + $startColor + ",endcolorstr=" + $endColor + ",gradientType=" + $ie-direction + ")");
 }

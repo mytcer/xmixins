@@ -5,6 +5,7 @@
 	<title>x-mixins test page</title>
 	<link rel="stylesheet" href="demo.css" />
 	<style>
+		p {margin:0;padding:0;}
 		.demo-nav {padding: 15px 0 20px 0;text-align: center;}
 		.demo-nav a {margin: 0 15px;}
 		.box {
@@ -13,7 +14,7 @@
 			*zoom: 1;
 			width: 200px;
 			min-height: 100px;
-			_min-height: 100px;
+			_height: 100px;
 			margin: 10px;
 			vertical-align: top;
 			line-height: 2;
@@ -49,11 +50,8 @@
 <div id="x-box-sizing-example" class="box">x-box-sizing</div>
 <div id="x-clearfix-example" class="box">
 	<p>x-clearfix</p>
-	<div class="subbox clearfix">
+	<div class="subbox">
 		<p>see me by clearfix</p>
-	</div>
-	<div class="subbox no-clearfix">
-		<p>can't see me</p>
 	</div>
 </div>
 <div id="x-font-face-example" class="box">

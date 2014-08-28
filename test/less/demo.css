@@ -25,6 +25,7 @@
 }
 #x-border-triangle-example .triangle {
   display: inline-block;
+  margin-right: 3px;
 }
 #x-border-triangle-example .top {
   width: 0;
@@ -135,26 +136,24 @@
   padding: 5px;
 }
 #x-clearfix-example {
-  line-height: 0;
+  line-height: 1.5;
 }
 #x-clearfix-example .subbox {
+  *zoom: 1;
   margin-bottom: 5px;
   background: green;
   color: #fff;
 }
-#x-clearfix-example .subbox p {
-  float: left;
-}
-#x-clearfix-example .clearfix {
-  *zoom: 1;
-}
-#x-clearfix-example .clearfix:before,
-#x-clearfix-example .clearfix:after {
+#x-clearfix-example .subbox:before,
+#x-clearfix-example .subbox:after {
   content: " ";
   display: table;
 }
-#x-clearfix-example .clearfix:after {
+#x-clearfix-example .subbox:after {
   clear: both;
+}
+#x-clearfix-example .subbox p {
+  float: left;
 }
 @font-face {
   font-family: "iconfont";
@@ -188,20 +187,20 @@
   height: 50px;
 }
 #x-linear-gradient-example .horizontal {
+  filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ff0000,endcolorstr=#008000,gradientType=1);
   background: -webkit-linear-gradient(null, #ff0000, #008000);
   background: -moz-linear-gradient(null, #ff0000, #008000);
   background: -ms-linear-gradient(null, #ff0000, #008000);
   background: -o-linear-gradient(null, #ff0000, #008000);
   background: linear-gradient(to right, #ff0000, #008000);
-  filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ff0000,endcolorstr=#008000,gradientType=null);
 }
 #x-linear-gradient-example .vertical {
+  filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ff0000,endcolorstr=#008000,gradientType=0);
   background: -webkit-linear-gradient(null, #ff0000, #008000);
   background: -moz-linear-gradient(null, #ff0000, #008000);
   background: -ms-linear-gradient(null, #ff0000, #008000);
   background: -o-linear-gradient(null, #ff0000, #008000);
   background: linear-gradient(to bottom, #ff0000, #008000);
-  filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ff0000,endcolorstr=#008000,gradientType=null);
 }
 #x-min-height-example {
   height: auto;
@@ -217,6 +216,7 @@
   left: 0;
   width: 100%;
   height: 100%;
+  _height: 100px;
   background: #000;
   opacity: 0.3;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=30);

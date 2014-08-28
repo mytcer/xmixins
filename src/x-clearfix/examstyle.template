@@ -1,7 +1,8 @@
 #x-clearfix-example {
-	line-height: 0;
+	line-height: 1.5;
 
 	.subbox {
+		<%=include%>x-clearfix();
 		margin-bottom: 5px;
 		background: green;
 		color: #fff;
@@ -9,9 +10,5 @@
 		p {
 			float: left;
 		}
-	}
-
-	.clearfix {
-		<%=include%>x-clearfix();
 	}
 }
