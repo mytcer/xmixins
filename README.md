@@ -1,7 +1,6 @@
 ![XMixins](./images/icon.png)
-![xmixins version](https://badge.fury.io/bo/xmixins.png)
 
-# XMixins
+# XMixins ![xmixins version](https://badge.fury.io/bo/xmixins.png)
 
 > Introduction：XMixins is a css mixin library, which compatible with LESS, SASS and Stylus at the same time. It can provide the same mixin for different CSS preprocessor, and follow the CSS3 specification, ensure consistency and fairness of the use!
 
