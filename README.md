@@ -1,4 +1,4 @@
-![XMixins](./images/icons.png)
+![XMixins](./images/icon.png)
 
 # XMixins ![xmixins version](https://badge.fury.io/bo/xmixins.png)
 
