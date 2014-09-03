@@ -2,6 +2,8 @@
 
 | mixin name | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+|x-transform | 9+ | √ | √ | √ | √ | √ |
+|x-transition | 10+ | √ | √ | √ | √ | √ |
 |x-animation | 10+ | √ | √ | √ | √ | √ |
 
 ### v0.2.1

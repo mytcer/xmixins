@@ -4,6 +4,24 @@
 
 	syntax：@include x-animation($animation);
 
+	params：
+
+		* $animation --- the composition of the value：
+
+			* animation-name  
+
+			* animation-duration
+
+			* animation-timing-function
+
+			* animation-delay
+
+			* animation-iteration-count
+
+			* animation-direction
+
+	note：the default value is "none 0 ease 0 1 normal"
+
 **2. example**
 
 	div {
@@ -195,4 +213,55 @@
 
 	div {
 		@include x-text-overflow(ellipsis);
+	}
+<br>
+### x-transform
+
+**1. usage**
+
+	syntax：@include x-transform($value);
+
+	params：
+
+		* $value --- transform-functions | none（default value）
+
+**2. example**
+
+	div {
+		@include x-transform(rotate(20deg));
+	}
+
+**3. source**
+
+* [The available transform functions](http://www.w3school.com.cn/cssref/pr_transform.asp)
+
+<br>
+### x-transition
+
+**1. usage**
+
+	syntax：@include x-transition($value);
+
+	params：
+
+		* $value --- the composition of the value：
+
+			* transition-property
+
+			* transition-duration
+
+			* transition-timing-function
+
+			* transition-delay
+
+	note：the default value is "all 0 ease 0"
+
+**2. example**
+
+	div {
+		height: 100px;
+		@include x-transition(height 2s ease);
+	}
+	div:hover {
+		height: 300px;
 	}

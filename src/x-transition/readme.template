@@ -1,0 +1,29 @@
+### x-transition
+
+**1. usage**
+
+	syntax：<%=include%>x-transition(<%=variable%>value);
+
+	params：
+
+		* <%=variable%>value --- the composition of the value：
+
+			* transition-property
+
+			* transition-duration
+
+			* transition-timing-function
+
+			* transition-delay
+
+	note：the default value is "all 0 ease 0"
+
+**2. example**
+
+	div {
+		height: 100px;
+		<%=include%>x-transition(height 2s ease);
+	}
+	div:hover {
+		height: 300px;
+	}

@@ -23,11 +23,31 @@
 
 <br />
 
-### 2. Doc
+### 2. Released mixins
+
+| mixin name | description | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+|x-border-radius | border-radius | 9+ | √ | √ | √ | √ | √ |
+|x-border-triangle | border triangle | 6+ | √ | √ | √ | √ | √ |
+|x-box-shadow | box-shadow | 9+ | √ | √ | √ | √ | √ |
+|x-box-sizing | box-sizing |9+ | √ | √ | √ | √ | √ |
+|x-text-overflow | text-overflow | 6+ | √ | √ | √ | √ | √ |
+|x-clearfix | clear float | 6+ | √ | √ | √ | √ | √ |
+|x-min-height | min-height | 6+ | √ | √ | √ | √ | √ |
+|x-opacity | opacity | 6+ | √ | √ | √ | √ | √ |
+|x-inline-block | inline-block | 6+ | √ | √ | √ | √ | √ |
+|x-font-face | font-face | 6+ | √ | √ | √ | √ | √ |
+|x-linear-gradient | linear-gradient | 6+ | √ | √ | √ | √ | √ |
+|x-grayscale | turn colour image into gray image | 6~9 | √ | √ | √ | √ | √ |
+|x-transform | transform | 9+ | √ | √ | √ | √ | √ |
+|x-transition | transition | 10+ | √ | √ | √ | √ | √ |
+|x-animation | animation | 10+ | √ | √ | √ | √ | √ |
+
+<br />
+
+### 3. Doc for mixins
 
 * [doc for less](./doc/less.md)
 * [doc for sass](./doc/sass.md)
 * [doc for stylus](./doc/styl.md)
-
-<br>
 

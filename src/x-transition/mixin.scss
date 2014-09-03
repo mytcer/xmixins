@@ -1,0 +1,10 @@
+/**
+ * x-transition
+ * @link hts-tricks.com/almanac/properties/t/transition/
+ */
+@mixin x-transition($value) {
+    -webkit-transition: $value;
+    -moz-transition: $value;
+    -o-transition: $value;
+    transition: $value;		
+}

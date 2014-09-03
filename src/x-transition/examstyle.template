@@ -1,0 +1,7 @@
+#x-transition-example {
+	height: 100px;
+	<%=include%>x-transition(height 2s ease);
+}
+#x-transition-example:hover {
+	height: 300px;
+}

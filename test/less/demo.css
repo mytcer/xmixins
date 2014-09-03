@@ -265,3 +265,23 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+#x-transform-example {
+  -webkit-transform: rotate(20deg);
+  -moz-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  -o-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+#x-transition-example {
+  height: 100px;
+  -webkit-transition: height 2s ease;
+  -moz-transition: height 2s ease;
+  -o-transition: height 2s ease;
+  transition: height 2s ease;
+}
+#x-transition-example:hover {
+  height: 300px;
+}
+#x-transition-example:focus {
+  height: 300px;
+}
