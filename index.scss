@@ -1,3 +1,9 @@
+@mixin x-animation($animation) {
+	-webkit-animation: $animation;
+	-moz-animation: $animation;
+	-o-animation: $animation;
+	animation: $animation;
+}
 @mixin x-border-radius($radius, $direction:all) {
 	@if ($direction == all) {
 	    -moz-border-radius: $radius;

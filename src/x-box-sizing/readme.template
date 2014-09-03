@@ -4,7 +4,7 @@
 
 	syntax：<%=include%>x-box-sizing(<%=variable%>model);
 
-	param：
+	params：
 
 		* <%=variable%>model --- content-box | border-box | inherit
 

@@ -1,0 +1,29 @@
+### x-animation
+
+**1. usage**
+
+	syntax：<%=include%>x-animation(<%=variable%>animation);
+
+	params：
+
+		* <%=variable%>animation --- the composition of the value：
+
+			* animation-name  
+
+			* animation-duration
+
+			* animation-timing-function
+
+			* animation-delay
+
+			* animation-iteration-count
+
+			* animation-direction
+
+			The default value is：none 0 ease 0 1 normal
+
+**2. example**
+
+	div {
+		<%=include%>x-animation(test 3s ease);
+	}

@@ -1,3 +1,9 @@
+### v0.3.0
+
+| mixin name | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+|x-animation | 10+ | √ | √ | √ | √ | √ |
+
 ### v0.2.1
 
 > note：bugfix for x-linear-gradient mixin in IE6~9

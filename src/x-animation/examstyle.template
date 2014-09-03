@@ -1,0 +1,19 @@
+@-webkit-keyframes test {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+@-moz-keyframes test {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+@-o-keyframes test {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+@keyframes test {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+#x-animation-example {
+	<%=include%>x-animation(test 3s ease);
+}

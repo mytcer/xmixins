@@ -1,10 +1,22 @@
+### x-animation
+
+**1. usage**
+
+	syntax：.x-animation(@animation);
+
+**2. example**
+
+	div {
+		.x-animation(test 3s ease);
+	}
+<br>
 ### x-border-radius
 
 **1. usage**
 
 	syntax：.x-border-radius(@radius, @direction);
 
-	param：
+	params：
 
 		* @direction --- all (default value) | top | left | bottom | left
 
@@ -36,7 +48,7 @@
 
 	syntax：.x-border-triangle(@borderWidth, @borderColor, @direction);
 
-	param：
+	params：
 
 		* @borderWidth --- etc, 5px
 
@@ -68,7 +80,7 @@
 
 	syntax：.x-box-sizing(@model);
 
-	param：
+	params：
 
 		* @model --- content-box | border-box | inherit
 
@@ -135,7 +147,7 @@
 
 	syntax：.x-linear-gradient(@direction, @startColor, @endColor);
 
-	param：
+	params：
 
 		* @direction --- to bottom | to right
 
@@ -175,7 +187,7 @@
 
 	syntax：.x-text-overflow(@cutway);
 
-	param：
+	params：
 
 		* @cutway --- ellipsis | clip (default value)
 

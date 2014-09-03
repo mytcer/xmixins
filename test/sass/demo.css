@@ -1,3 +1,33 @@
+@-webkit-keyframes test {
+  from {
+    opacity: 1; }
+
+  to {
+    opacity: 0; } }
+@-moz-keyframes test {
+  from {
+    opacity: 1; }
+
+  to {
+    opacity: 0; } }
+@-o-keyframes test {
+  from {
+    opacity: 1; }
+
+  to {
+    opacity: 0; } }
+@keyframes test {
+  from {
+    opacity: 1; }
+
+  to {
+    opacity: 0; } }
+#x-animation-example {
+  -webkit-animation: test 3s ease;
+  -moz-animation: test 3s ease;
+  -o-animation: test 3s ease;
+  animation: test 3s ease; }
+
 #x-border-radius-example {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;

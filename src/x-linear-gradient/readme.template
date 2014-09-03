@@ -4,7 +4,7 @@
 
 	syntax：<%=include%>x-linear-gradient(<%=variable%>direction, <%=variable%>startColor, <%=variable%>endColor);
 
-	param：
+	params：
 
 		* <%=variable%>direction --- to bottom | to right
 
