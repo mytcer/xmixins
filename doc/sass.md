@@ -2,11 +2,11 @@
 
 **1. usage**
 
-	syntax：@include x-animation($animation);
+	syntax：@include x-animation($value);
 
 	params：
 
-		* $animation --- the composition of the value：
+		* $value --- the composition of the value：
 
 			* animation-name  
 

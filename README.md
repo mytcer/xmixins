@@ -23,7 +23,15 @@
 
 <br />
 
-### 2. Released mixins
+### 2. Doc for mixins
+
+* [doc for less](./doc/less.md)
+* [doc for sass](./doc/sass.md)
+* [doc for stylus](./doc/styl.md)
+
+<br />
+
+### 3. Released mixins
 
 | mixin name | description | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
@@ -42,12 +50,4 @@
 |x-transform | transform | 9+ | √ | √ | √ | √ | √ |
 |x-transition | transition | 10+ | √ | √ | √ | √ | √ |
 |x-animation | animation | 10+ | √ | √ | √ | √ | √ |
-
-<br />
-
-### 3. Doc for mixins
-
-* [doc for less](./doc/less.md)
-* [doc for sass](./doc/sass.md)
-* [doc for stylus](./doc/styl.md)
 

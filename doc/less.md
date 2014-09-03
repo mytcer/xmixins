@@ -2,11 +2,11 @@
 
 **1. usage**
 
-	syntax：.x-animation(@animation);
+	syntax：.x-animation(@value);
 
 	params：
 
-		* @animation --- the composition of the value：
+		* @value --- the composition of the value：
 
 			* animation-name  
 

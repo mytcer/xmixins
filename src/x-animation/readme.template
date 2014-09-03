@@ -2,11 +2,11 @@
 
 **1. usage**
 
-	syntax：<%=include%>x-animation(<%=variable%>animation);
+	syntax：<%=include%>x-animation(<%=variable%>value);
 
 	params：
 
-		* <%=variable%>animation --- the composition of the value：
+		* <%=variable%>value --- the composition of the value：
 
 			* animation-name  
 

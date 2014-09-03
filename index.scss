@@ -1,8 +1,8 @@
-@mixin x-animation($animation) {
-	-webkit-animation: $animation;
-	-moz-animation: $animation;
-	-o-animation: $animation;
-	animation: $animation;
+@mixin x-animation($value) {
+	-webkit-animation: $value;
+	-moz-animation: $value;
+	-o-animation: $value;
+	animation: $value;
 }
 @mixin x-border-radius($radius, $direction:all) {
 	@if ($direction == all) {

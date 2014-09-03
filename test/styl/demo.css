@@ -274,9 +274,6 @@
 #x-transition-example:hover {
   height: 300px;
 }
-#x-transition-example:focus {
-  height: 300px;
-}
 @-moz-keyframes test {
   from {
     opacity: 1;
