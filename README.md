@@ -17,9 +17,24 @@
             -- index.scss
             -- index.styl
                 
-(2) import xmixins to your style file
+(2) import xmixins to your style file（example：add linear gradient to the target element）
     
-    @import "bower_components/xmixins/index.[less|scss|styl]
+	@import "bower_components/xmixins/index";
+
+	// for less
+	div {
+    	.x-linear-gradient(to bottom, #fff, #666);
+	}
+
+	// for sass
+	div {
+    	@include x-linear-gradient(to bottom, #fff, #666);
+	}
+
+	// for stylus
+	div {
+    	x-linear-gradient(to bottom, #fff, #666);
+	}
 
 <br />
 
