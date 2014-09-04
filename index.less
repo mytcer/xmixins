@@ -145,6 +145,9 @@
     *display: inline;
     *zoom: 1;
 }
+.x-keyframes(@name, @value) {
+	@-moz-keyframes @name @value;
+}
 .x-linear-gradient(@direction, @startColor, @endColor) {
 	@xdirection: null;
 

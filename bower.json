@@ -25,6 +25,7 @@
         "doc",
         "tasks",
         "fragment",
+        "images",
         ".bowerrc",
         ".jshintrc",
         ".jshintignore",
