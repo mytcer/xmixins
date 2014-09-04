@@ -159,20 +159,6 @@
 		@include x-inline-block();
 	}
 <br>
-### x-keyframes
-
-**1. usage**
-
-	syntax：@include x-keyframes($param);
-
-	params：
-
-**2. example**
-
-	div {
-		@include x-keyframes();
-	}
-<br>
 ### x-linear-gradient
 
 **1. usage**
