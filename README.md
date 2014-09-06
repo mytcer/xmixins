@@ -48,7 +48,7 @@
 
 ### 3. Released mixins
 
-**a. standard**
+**(1) standard**
 
 | mixin name | description | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
@@ -65,7 +65,7 @@
 |x-transition | transition | 10+ | √ | √ | √ | √ | √ |
 |x-animation | animation | 10+ | √ | √ | √ | √ | √ |
 
-**b. non-standard**
+**(2) non-standard**
 
 | mixin name | description | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
