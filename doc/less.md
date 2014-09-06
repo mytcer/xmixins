@@ -265,3 +265,22 @@
 	div:hover {
 		height: 300px;
 	}
+
+<br>
+### x-transparent
+
+**1. usage**
+
+	syntax：.x-transparent(@bgcolor, @opacity);
+
+	params：
+
+		* @bgcolor --- background color
+
+		* @opacity --- opacity
+
+**2. example**
+
+	div {
+		.x-transparent(#fff, 0.2);
+	}

@@ -1,14 +1,5 @@
 #x-opacity-example {
-	position: relative;
-
-	div {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 100%;
-		_height: 100px;
-		background: #000;
-		<%=include%>x-opacity(0.3);
-	}
+	background: #000;
+	color: #fff;
+	<%=include%>x-opacity(0.3);
 }

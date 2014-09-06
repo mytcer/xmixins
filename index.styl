@@ -189,3 +189,9 @@ x-transition($value) {
     -o-transition: $value;
     transition: $value;	
 }
+x-transparent($bgcolor, $opacity) {
+	$opacityIE = $opacity * 100;
+	filter unquote('alpha(opacity=' + $opacityIE + ')');
+	background-color: $bgcolor;
+	background-color: rgba(red($bgcolor), green($bgcolor), blue($bgcolor), $opacity);	
+}

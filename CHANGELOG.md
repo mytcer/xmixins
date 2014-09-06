@@ -1,3 +1,11 @@
+### v0.4.0（waiting...）
+
+| mixin name | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+|x-transparent | ? | √ | √ | √ | √ | √ |
+
+<br>
+
 ### v0.3.0
 
 | mixin name | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
@@ -5,6 +13,8 @@
 |x-transform | 9+ | √ | √ | √ | √ | √ |
 |x-transition | 10+ | √ | √ | √ | √ | √ |
 |x-animation | 10+ | √ | √ | √ | √ | √ |
+
+<br>
 
 ### v0.2.1
 

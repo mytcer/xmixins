@@ -166,7 +166,7 @@
 	_height: $height;
 }
 @mixin x-opacity($opacity) {
-	$opacityIE: ($opacity * 100);
+	$opacityIE: $opacity * 100;
 	opacity: $opacity;
 	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacityIE); // IE 8 & 9
 	filter: alpha(opacity=$opacityIE); // IE 6 & 7
@@ -188,4 +188,10 @@
     -moz-transition: $value;
     -o-transition: $value;
     transition: $value;		
+}
+@mixin x-transparent($bgcolor, $opacity) {
+	$opacityIE: $opacity * 100;
+	filter: alpha(opacity=$opacityIE);
+	background-color: $bgcolor;
+	background-color: rgba(red($bgcolor), green($bgcolor), blue($bgcolor), $opacity);	
 }
