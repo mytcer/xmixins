@@ -22,7 +22,7 @@ module.exports = function(grunt) {
         mixinSrcFilePath: '<%= srcDir %>/**/mixin',
 
         concat: {
-            // 生成文档
+            // generate doc
             doc: {
                 options: {
                     separator: '\r\n<br>\r\n'
@@ -33,7 +33,7 @@ module.exports = function(grunt) {
                     '<%= docDir %>/styl.md': ['<%= mixinDocFilePath %>.styl.tmp']
                 }
             },
-            // 生成入口文件
+            // generate the entrance files
             mixin: {
                 options: {
                     stripBanners: true
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
                     '<%= outputStylFile %>': ['<%= mixinSrcFilePath %>.styl']
                 }
             },
-            // 生成demo html
+            // generate demo html
             demoHtml: {
                 files: {
                     '<%= testDir %>/less/demo.html': [
@@ -64,7 +64,7 @@ module.exports = function(grunt) {
                     ]
                 }
             },
-            // 生成demo style
+            // generate demo style
             demoStyle: {
                 files: {
                     '<%= testDir %>/less/demo.less': [
@@ -82,24 +82,18 @@ module.exports = function(grunt) {
                 }
             }
         },
-
-        // 编译less版的demo样式
         less: {
             all: {
                 src: ['<%= testDir %>/less/demo.less'],
                 dest: '<%= testDir %>/less/demo.css'
             }
         },
-
-        // 编译sass版的demo样式
         sass: {
             all: {
                 src: ['<%= testDir %>/sass/demo.scss'],
                 dest: '<%= testDir %>/sass/demo.css'
             }
         },
-
-        // 编译stylus版的demo样式
         stylus: {
             all: {
                 options: {
@@ -110,8 +104,6 @@ module.exports = function(grunt) {
                 }
             }
         },
-
-        // 清理临时目录及文件
         clean: {
             tmpFiles: [
                 '<%= testDir %>/less/demo.less',
@@ -121,8 +113,6 @@ module.exports = function(grunt) {
                 '<%= mixinDocFilePath %>.*.tmp'
             ]
         },
-
-        // 启动一个本地服务器
         connect: {
             demo: {
                 options: {
@@ -135,8 +125,6 @@ module.exports = function(grunt) {
                 }
             }
         },
-
-        // 监控文件改动
         watch: {
             all: {
                 files: [
@@ -148,35 +136,38 @@ module.exports = function(grunt) {
                 tasks: ['default']
             }
         },
-
         jshint: {
             options: {
                 jshintrc: true,
-                reporter: require('jshint-stylish') // 美化jshint的输出结果
+                reporter: require('jshint-stylish') // beauty jshint output
             },
             all: ['tasks/**/*.js']
         }
     });
 
-    // 载入任务模块
     require('matchdep').filterDev('grunt-*').forEach(grunt.loadNpmTasks);
 
-    // 基于各模块目录的readme.template和examstyle.template来生成其less,sass及stylus版本
+    // generate readme and example for mixin module
     grunt.task.loadTasks('./tasks/generate');
 
     /**
-     * 添加模块
+     * add module
      * @usage grunt add:modName
      */
     grunt.task.loadTasks('./tasks/add');
 
     /**
-     * 启动demo服务器，并在默认浏览器中打开demo页
+     * start a local server, and open demo page in the browser
      * @usage grunt demo
      */
     grunt.task.loadTasks('./tasks/demo');
 
-    // 注册默认任务
+    /**
+     * set package version
+     * @usage grunt version:x.x.x
+     */
+    grunt.task.loadTasks('./tasks/version');
+
     grunt.registerTask('default', [
         'generate',
         'concat',

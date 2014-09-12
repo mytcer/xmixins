@@ -1,5 +1,5 @@
 /**
- * @fileoverview 添加模块
+ * @fileoverview add module
  * @usage grunt add:modName
  */
 module.exports = function(grunt) {
@@ -73,7 +73,7 @@ module.exports = function(grunt) {
     }
 
     grunt.registerTask('add', function(modName, link) {
-        // 所有mixin模块名必须以x-开头
+        // mixin module name must begin with 'x-'
         if (modName.substring(0, 2) != 'x-') {
             modName = 'x-' + modName;
         }

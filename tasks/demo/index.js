@@ -1,5 +1,5 @@
 /**
- * @fileoverview 启动一个本地服务器（用于测试demo），并在默认浏览器中打开demo页
+ * @fileoverview start a local server, and open demo page in the browser
  * @usage grunt demo
  */
 module.exports = function(grunt) {

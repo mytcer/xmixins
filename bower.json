@@ -1,42 +1,44 @@
 {
-    "name": "xmixins",
-    "version": "0.3.0",
-    "homepage": "https://github.com/mytcer/xmixins",
-    "authors": [
-        "thinker_creator@163.com"
-    ],
-    "description": "A css mixin library，which compatible with less, sass and stylus ！",
-    "main": "index.[less|scss|styl]",
-    "keywords": [
-        "less",
-        "sass",
-        "stylus",
-        "mixin"
-    ],
-    "license": "MIT",
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests",
-        "tmp",
-        "src",
-        "doc",
-        "tasks",
-        "fragment",
-        "images",
-        ".bowerrc",
-        ".jshintrc",
-        ".jshintignore",
-        ".gitignore",
-        ".sass-cache",
-        "bower.json",
-        ".bower.json",
-        "package.json",
-        "npm-debug.log",
-        "Gruntfile.js",
-        "CHANGELOG.md",
-        "README.md"
-    ]
+  "name": "xmixins",
+  "version": "0.4.0",
+  "homepage": "https://github.com/mytcer/xmixins",
+  "authors": [
+    "mytcer"
+  ],
+  "description": "A css mixin library，which compatible with less, sass and stylus ！",
+  "main": "index.[less|scss|styl]",
+  "keywords": [
+    "stylus",
+    "less",
+    "sass",
+    "mixin",
+    "css3",
+    "css"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests",
+    "tmp",
+    "src",
+    "doc",
+    "tasks",
+    "fragment",
+    "images",
+    ".bowerrc",
+    ".jshintrc",
+    ".jshintignore",
+    ".gitignore",
+    ".sass-cache",
+    "bower.json",
+    ".bower.json",
+    "package.json",
+    "npm-debug.log",
+    "Gruntfile.js",
+    "CHANGELOG.md",
+    "README.md"
+  ]
 }

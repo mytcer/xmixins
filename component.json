@@ -1,0 +1,20 @@
+{
+  "name": "xmixins",
+  "repo": "mytcer/xmixins",
+  "version": "0.4.0",
+  "styles": [
+    "index.less",
+    "index.scss",
+    "index.styl"
+  ],
+  "keywords": [
+    "stylus",
+    "less",
+    "sass",
+    "mixin",
+    "css3",
+    "css"
+  ],
+  "author": "mytcer",
+  "license": "MIT"
+}

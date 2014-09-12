@@ -1,5 +1,5 @@
 /**
- * @fileoverview 基于mixin模块中的readme.md.template和example.style.template生成less, sass及stylus版本
+ * @fileoverview generate readme and example for mixin module
  */
 module.exports = function(grunt) {
 
