@@ -28,6 +28,28 @@
 		@include x-animation(test 3s ease);
 	}
 <br>
+### x-background-retina
+
+**1. usage**
+
+	syntax：@include x-background-retina($img_1x, $img_2x, $width_1x, $height_1x);
+
+	params：
+
+		* $img_1x --- 1x background image url, <string>
+
+		* $img_2x --- 2x background image url, <string>
+
+		* $width_1x --- 1x background image width
+
+		* $height_1x --- 1x background image height
+
+**2. example**
+
+	div {
+		@include x-background-retina("1x.png", "2x.png", 24px, 24px);
+	}
+<br>
 ### x-border-radius
 
 **1. usage**
@@ -264,23 +286,4 @@
 	}
 	div:hover {
 		height: 300px;
-	}
-
-<br>
-### x-transparent
-
-**1. usage**
-
-	syntax：@include x-transparent($bgcolor, $opacity);
-
-	params：
-
-		* $bgcolor --- background color
-
-		* $opacity --- opacity
-
-**2. example**
-
-	div {
-		@include x-transparent(#fff, 0.2);
 	}

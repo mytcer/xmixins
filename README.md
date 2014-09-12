@@ -72,4 +72,4 @@
 |x-clearfix | clear float | 6+ | √ | √ | √ | √ | √ |
 |x-border-triangle | border triangle | 6+ | √ | √ | √ | √ | √ |
 |x-grayscale | turn colour image into gray image | 6~9 | √ | √ | √ | √ | √ |
-|x-transparent | set transparent background color | ? | √ | √ | √ | √ | √ |
+|x-background-retina | background image support retina | 6+ | √ | √ | √ | √ | √ |

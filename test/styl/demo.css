@@ -28,6 +28,19 @@
   -o-animation: test 3s ease;
   animation: test 3s ease;
 }
+#x-background-retina-example em {
+  display: block;
+  width: 24px;
+  height: 24px;
+  margin: 5px auto;
+  background-image: url("http://gtms01.alicdn.com/tps/i1/TB1_Gy5GXXXXXX2XFXXCBGNFFXX-24-24.png");
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  #x-background-retina-example em {
+    background-image: url("http://gtms02.alicdn.com/tps/i2/TB1Hhv4FVXXXXaGapXXWA_BHXXX-48-48.png");
+    background-size: 24px 24px;
+  }
+}
 #x-border-radius-example {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
@@ -265,11 +278,6 @@
 }
 #x-transition-example:hover {
   height: 300px;
-}
-#x-transparent-example {
-  filter: alpha(opacity=10);
-  background-color: #000;
-  background-color: rgba(0,0,0,0.1);
 }
 @-moz-keyframes test {
   from {

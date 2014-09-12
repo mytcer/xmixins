@@ -2,7 +2,7 @@
 
 | mixin name | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-|x-transparent | ? | √ | √ | √ | √ | √ |
+|x-background-retina | 6+ | √ | √ | √ | √ | √ |
 
 <br>
 

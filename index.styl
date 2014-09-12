@@ -4,6 +4,19 @@ x-animation($value) {
 	-o-animation: $value;
 	animation: $value;
 }
+x-background-retina($img_1x, $img_2x, $width_1x, $height_1x) {
+	background-image: url($img_1x);
+
+	@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx) {
+		background-image: url($img_2x);
+		background-size: $width_1x $height_1x;
+	}	
+}
 x-border-radius($radius, $direction=all) {
 	if ($direction == all) {
 	    -moz-border-radius: $radius;
@@ -188,10 +201,4 @@ x-transition($value) {
     -moz-transition: $value;
     -o-transition: $value;
     transition: $value;	
-}
-x-transparent($bgcolor, $opacity) {
-	$opacityIE = $opacity * 100;
-	filter unquote('alpha(opacity=' + $opacityIE + ')');
-	background-color: $bgcolor;
-	background-color: rgba(red($bgcolor), green($bgcolor), blue($bgcolor), $opacity);	
 }
