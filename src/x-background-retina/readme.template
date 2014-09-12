@@ -1,0 +1,21 @@
+### x-background-retina
+
+**1. usage**
+
+	syntax：<%=include%>x-background-retina(<%=variable%>img_1x, <%=variable%>img_2x, <%=variable%>width_1x, <%=variable%>height_1x);
+
+	params：
+
+		* <%=variable%>img_1x --- 1x background image url, <string>
+
+		* <%=variable%>img_2x --- 2x background image url, <string>
+
+		* <%=variable%>width_1x --- 1x background image width
+
+		* <%=variable%>height_1x --- 1x background image height
+
+**2. example**
+
+	div {
+		<%=include%>x-background-retina("1x.png", "2x.png", 24px, 24px);
+	}

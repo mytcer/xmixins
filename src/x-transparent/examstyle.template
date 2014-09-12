@@ -1,3 +1,0 @@
-#x-transparent-example {
-	<%=include%>x-transparent(#000, 0.1);
-}

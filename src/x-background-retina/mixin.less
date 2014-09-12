@@ -1,0 +1,17 @@
+/**
+ * x-background-retina
+ * @link 
+ */
+.x-background-retina(@img_1x, @img_2x, @width_1x, @height_1x) {
+	background-image: url(@img_1x);
+
+	@media only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min--moz-device-pixel-ratio: 2),
+	only screen and (-o-min-device-pixel-ratio: 2/1),
+	only screen and (min-device-pixel-ratio: 2),
+	only screen and (min-resolution: 192dpi),
+	only screen and (min-resolution: 2dppx) {
+		background-image: url(@img_2x);
+		background-size: @width_1x @height_1x;
+	}	
+}
