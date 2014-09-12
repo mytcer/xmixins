@@ -13,7 +13,9 @@
     "sass",
     "mixin",
     "css3",
-    "css"
+    "css",
+    "bower",
+    "component"
   ],
   "license": "MIT",
   "ignore": [
