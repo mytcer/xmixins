@@ -1,0 +1,3 @@
+#x-calc-example {
+	<%=include%>x-calc();
+}

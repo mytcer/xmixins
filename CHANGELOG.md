@@ -1,4 +1,4 @@
-### v0.4.0
+### v0.4.0（doing...）
 
 | mixin name | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
