@@ -113,6 +113,14 @@ module.exports = function(grunt) {
                 '<%= mixinDocFilePath %>.*.tmp'
             ]
         },
+        concurrent: {
+            dev: {
+                tasks: ['connect', 'watch'],
+                options: {
+                    logConcurrentOutput: true
+                }
+            }
+        },
         connect: {
             demo: {
                 options: {
@@ -157,12 +165,6 @@ module.exports = function(grunt) {
     grunt.task.loadTasks('./tasks/add');
 
     /**
-     * start a local server, and open demo page in the browser
-     * @usage grunt demo
-     */
-    grunt.task.loadTasks('./tasks/demo');
-
-    /**
      * set package version
      * @usage grunt version:x.x.x
      */
@@ -176,5 +178,7 @@ module.exports = function(grunt) {
         'stylus',
         'clean'
     ]);
+
+    grunt.registerTask('demo', ['concurrent:dev']);
 
 };

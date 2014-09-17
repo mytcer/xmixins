@@ -1,0 +1,15 @@
+### x-hyphenate
+
+**1. usage**
+
+	syntax：<%=include%>x-hyphenate();
+
+**2. example**
+
+	div {
+		<%=include%>x-hyphenate();
+	}
+
+**3. source**
+
+* [http://css-tricks.com/almanac/properties/h/hyphenate/](http://css-tricks.com/almanac/properties/h/hyphenate/)

@@ -4,6 +4,53 @@
 	-o-animation: @value;
 	animation: @value;
 }
+.x-appearance(@value) {
+	-webkit-appearance: @value;
+	-moz-appearance: @value;
+	appearance: @value;	
+}
+.x-background-clip(@value: border-box) {
+
+	.x-if-simulater () when (@value = border-box) {
+		-moz-background-clip: border;
+		-webkit-background-clip: border;
+	}
+
+	.x-if-simulater () when (@value = padding-box) {
+		-moz-background-clip: padding;
+		-webkit-background-clip: padding;
+	}
+
+	.x-if-simulater () when (@value = content-box) {
+		-moz-background-clip: content;
+		-webkit-background-clip: content;
+	}
+
+	.x-if-simulater();
+	
+	background-clip: @value; 	
+}
+.x-background-origin(@value: border-box) {
+
+	.x-if-simulater () when (@value = border-box) {
+		-moz-background-origin: border;
+		-webkit-background-origin: border;
+	}
+
+	.x-if-simulater () when (@value = padding-box) {
+		-moz-background-origin: padding;
+		-webkit-background-origin: padding;
+	}
+
+	.x-if-simulater () when (@value = content-box) {
+		-moz-background-origin: content;
+		-webkit-background-origin: content;
+	}
+
+	.x-if-simulater();
+
+	background-origin: @value; 	
+}
 .x-background-retina(@img_1x, @img_2x, @width_1x, @height_1x) {
 	background-image: url(@img_1x);
 
@@ -16,6 +63,12 @@
 		background-image: url(@img_2x);
 		background-size: @width_1x @height_1x;
 	}	
+}
+.x-background-size(@size) {
+	-webkit-background-size: @size;
+	-moz-background-size: @size;
+	-o-background-size: @size;
+	background-size: @size;
 }
 .x-border-radius(@radius, @direction:all) {
 	.x-if-simulater () when (@direction = all) {
@@ -112,7 +165,7 @@
 
 	.x-if-simulater();
 }
-.x-box-shadow(@params) {
+ .x-box-shadow(@params) {
  	   -moz-box-shadow: @params;
  	-webkit-box-shadow: @params; 
   	        box-shadow: @params;
@@ -153,27 +206,40 @@
     /* for IE6~9 */
 	filter: gray;
 }
+.x-hyphenate() {
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;	
+}
 .x-inline-block() {
     display: inline-block;
     *display: inline;
     *zoom: 1;
 }
 .x-linear-gradient(@direction, @startColor, @endColor) {
-	@xdirection: null;
 
 	.x-if-simulater () when ("@{direction}" = "to bottom") {
-		@xdirection: top;
+	    background: -webkit-linear-gradient(top, @startColor, @endColor);
+	    background: -moz-linear-gradient(top, @startColor, @endColor);
+	    background: -ms-linear-gradient(top, @startColor, @endColor);
+	    background: -o-linear-gradient(top, @startColor, @endColor);
 	    filter: ~"progid:DXImageTransform.Microsoft.gradient(startcolorstr=@{startColor},endcolorstr=@{endColor},gradientType=0)";
 	}
+
 	.x-if-simulater () when ("@{direction}" = "to right") {
-		@xdirection: left;
+	    background: -webkit-linear-gradient(left, @startColor, @endColor);
+	    background: -moz-linear-gradient(left, @startColor, @endColor);
+	    background: -ms-linear-gradient(left, @startColor, @endColor);
+	    background: -o-linear-gradient(left, @startColor, @endColor);
 	    filter: ~"progid:DXImageTransform.Microsoft.gradient(startcolorstr=@{startColor},endcolorstr=@{endColor},gradientType=1)";
 	}
+
 	.x-if-simulater();
-    background: -webkit-linear-gradient(@xdirection, @startColor, @endColor);
-    background: -moz-linear-gradient(@xdirection, @startColor, @endColor);
-    background: -ms-linear-gradient(@xdirection, @startColor, @endColor);
-    background: -o-linear-gradient(@xdirection, @startColor, @endColor);
+
     background: linear-gradient(@direction, @startColor, @endColor);
 }
 .x-min-height(@height) {
@@ -183,9 +249,9 @@
 
 .x-opacity(@opacity) {
 	@opacityIE: @opacity * 100;
-	opacity: @opacity;
 	-ms-filter: ~"progid:DXImageTransform.Microsoft.Alpha(Opacity=@{opacityIE})"; // IE 8 & 9
 	filter: ~"alpha(opacity=@{opacityIE})"; // IE 6 & 7
+	opacity: @opacity;
 }
 .x-text-overflow(@cutway: clip) {
 	overflow: hidden;

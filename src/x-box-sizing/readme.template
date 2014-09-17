@@ -13,3 +13,7 @@
 	div {
 		<%=include%>x-box-sizing(border-box);
 	}
+
+**3. source**
+
+* [http://css-tricks.com/box-sizing/](http://css-tricks.com/box-sizing/)

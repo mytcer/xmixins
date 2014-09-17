@@ -1,0 +1,21 @@
+### x-background-clip
+
+**1. usage**
+
+	syntax：<%=include%>x-background-clip(<%=variable%>value);
+
+	params：
+
+		* <%=variable%>value --- border-box（default value） | padding-box | content-box
+
+**2. example**
+
+	div {
+		<%=include%>x-background-clip(content-box);
+	}
+
+**3. source**
+
+* [http://www.w3school.com.cn/cssref/pr_background-clip.asp](http://www.w3school.com.cn/cssref/pr_background-clip.asp)
+
+* [http://css-tricks.com/transparent-borders-with-background-clip/](http://css-tricks.com/transparent-borders-with-background-clip/)

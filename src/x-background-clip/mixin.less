@@ -1,0 +1,21 @@
+.x-background-clip(@value: border-box) {
+
+	.x-if-simulater () when (@value = border-box) {
+		-moz-background-clip: border;
+		-webkit-background-clip: border;
+	}
+
+	.x-if-simulater () when (@value = padding-box) {
+		-moz-background-clip: padding;
+		-webkit-background-clip: padding;
+	}
+
+	.x-if-simulater () when (@value = content-box) {
+		-moz-background-clip: content;
+		-webkit-background-clip: content;
+	}
+
+	.x-if-simulater();
+	
+	background-clip: @value; 	
+}

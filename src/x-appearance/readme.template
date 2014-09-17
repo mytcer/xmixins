@@ -1,0 +1,19 @@
+### x-appearance
+
+**1. usage**
+
+	syntax：<%=include%>x-appearance(<%=variable%>value);
+
+	params：
+
+		* <%=variable%>value --- The available value：http://css-tricks.com/almanac/properties/a/appearance/
+
+**2. example**
+
+	div {
+		<%=include%>x-appearance(button);
+	}
+
+**3. source**
+
+* [http://css-tricks.com/almanac/properties/a/appearance/](http://css-tricks.com/almanac/properties/a/appearance/)

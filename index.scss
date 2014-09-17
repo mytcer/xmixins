@@ -4,6 +4,49 @@
 	-o-animation: $value;
 	animation: $value;
 }
+@mixin x-appearance($value) {
+	-webkit-appearance: $value;
+	-moz-appearance: $value;
+	appearance: $value;	
+}
+@mixin x-background-clip($value: border-box) {
+	$xvalue: null;
+
+	@if ($value == border-box) {
+		$xvalue: border;
+	}
+
+	@if ($value == padding-box) {
+		$xvalue: padding;
+	}
+
+	@if ($value == content-box) {
+		$xvalue: content;
+	}
+
+	-moz-background-clip: $xvalue;
+	-webkit-background-clip: $xvalue;
+	background-clip: $value; 	
+}
+@mixin x-background-origin($value: border-box) {
+	$xvalue: null;
+
+	@if ($value == border-box) {
+		$xvalue: border;
+	}
+
+	@if ($value == padding-box) {
+		$xvalue: padding;
+	}
+
+	@if ($value == content-box) {
+		$xvalue: content;
+	}
+
+	-moz-background-origin: $xvalue;
+	-webkit-background-origin: $xvalue;
+	background-origin: $value; 	
+}
 @mixin x-background-retina($img_1x, $img_2x, $width_1x, $height_1x) {
 	background-image: url($img_1x);
 
@@ -16,6 +59,12 @@
 		background-image: url($img_2x);
 		background-size: $width_1x $height_1x;
 	}	
+}
+@mixin x-background-size($size) {
+	-webkit-background-size: $size;
+	-moz-background-size: $size;
+	-o-background-size: $size;
+	background-size: $size;
 }
 @mixin x-border-radius($radius, $direction:all) {
 	@if ($direction == all) {
@@ -149,6 +198,15 @@
     /* for IE6~9 */
 	filter: gray;
 }
+@mixin x-hyphenate() {
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+	-webkit-hyphens: auto;
+	-moz-hyphens: auto;
+	-ms-hyphens: auto;
+	hyphens: auto;	
+}
 @mixin x-inline-block() {
     display: inline-block;
     *display: inline;
@@ -180,9 +238,9 @@
 }
 @mixin x-opacity($opacity) {
 	$opacityIE: $opacity * 100;
-	opacity: $opacity;
 	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacityIE); // IE 8 & 9
 	filter: alpha(opacity=$opacityIE); // IE 6 & 7
+	opacity: $opacity;
 }
 @mixin x-text-overflow($cutway: clip) {
 	overflow: hidden;

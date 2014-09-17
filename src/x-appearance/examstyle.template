@@ -1,0 +1,5 @@
+#x-appearance-example span {
+	<%=include%>x-inline-block();
+	padding: 5px;
+	<%=include%>x-appearance(button);
+}

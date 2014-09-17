@@ -9,3 +9,7 @@
 	img {
 		<%=include%>x-grayscale();  // colour image into a gray image
 	}
+
+**3. source**
+
+* [http://css-tricks.com/snippets/css/forcing-grayscale-printing/](http://css-tricks.com/snippets/css/forcing-grayscale-printing/)

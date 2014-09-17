@@ -1,0 +1,19 @@
+@mixin x-background-origin($value: border-box) {
+	$xvalue: null;
+
+	@if ($value == border-box) {
+		$xvalue: border;
+	}
+
+	@if ($value == padding-box) {
+		$xvalue: padding;
+	}
+
+	@if ($value == content-box) {
+		$xvalue: content;
+	}
+
+	-moz-background-origin: $xvalue;
+	-webkit-background-origin: $xvalue;
+	background-origin: $value; 	
+}

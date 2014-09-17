@@ -1,0 +1,19 @@
+#x-background-size-example {
+	span {
+		<%=include%>x-inline-block();
+		width: 50px;
+		height: 50px;
+		margin: 5px;
+		background: url(../../images/bg.jpg) no-repeat;
+		border: 1px solid #ccc;
+	}
+	.size {
+		<%=include%>x-background-size(50% 50%);	
+	}
+	.cover {
+		<%=include%>x-background-size(cover);	
+	}
+	.contain {
+		<%=include%>x-background-size(contain);
+	}
+}

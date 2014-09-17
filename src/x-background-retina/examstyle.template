@@ -3,5 +3,5 @@
 	width: 24px;
 	height: 24px;
 	margin: 5px auto;
-	<%=include%>x-background-retina("http://gtms01.alicdn.com/tps/i1/TB1_Gy5GXXXXXX2XFXXCBGNFFXX-24-24.png", "http://gtms02.alicdn.com/tps/i2/TB1Hhv4FVXXXXaGapXXWA_BHXXX-48-48.png", 24px, 24px);
+	<%=include%>x-background-retina("../../images/1x.png", "../../images/2x.png", 24px, 24px);
 }

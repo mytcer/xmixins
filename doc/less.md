@@ -27,6 +27,72 @@
 	div {
 		.x-animation(test 3s ease);
 	}
+
+**3. source**
+
+* [http://css-tricks.com/almanac/properties/a/animation/](http://css-tricks.com/almanac/properties/a/animation/)
+<br>
+### x-appearance
+
+**1. usage**
+
+	syntax：.x-appearance(@value);
+
+	params：
+
+		* @value --- The available value：http://css-tricks.com/almanac/properties/a/appearance/
+
+**2. example**
+
+	div {
+		.x-appearance(button);
+	}
+
+**3. source**
+
+* [http://css-tricks.com/almanac/properties/a/appearance/](http://css-tricks.com/almanac/properties/a/appearance/)
+<br>
+### x-background-clip
+
+**1. usage**
+
+	syntax：.x-background-clip(@value);
+
+	params：
+
+		* @value --- border-box（default value） | padding-box | content-box
+
+**2. example**
+
+	div {
+		.x-background-clip(content-box);
+	}
+
+**3. source**
+
+* [http://www.w3school.com.cn/cssref/pr_background-clip.asp](http://www.w3school.com.cn/cssref/pr_background-clip.asp)
+
+* [http://css-tricks.com/transparent-borders-with-background-clip/](http://css-tricks.com/transparent-borders-with-background-clip/)
+<br>
+### x-background-origin
+
+**1. usage**
+
+	syntax：.x-background-origin(@value);
+
+	params：
+
+		* @value --- border-box（default value） | padding-box | content-box
+
+**2. example**
+
+	div {
+		.x-background-origin(content-box);
+	}
+
+**3. source**
+
+* [http://www.w3school.com.cn/cssref/pr_background-origin.asp](http://www.w3school.com.cn/cssref/pr_background-origin.asp)
 <br>
 ### x-background-retina
 
@@ -49,6 +115,28 @@
 	div {
 		.x-background-retina("1x.png", "2x.png", 24px, 24px);
 	}
+<br>
+### x-background-size
+
+**1. usage**
+
+	syntax：.x-background-size(@size);
+
+	params：
+
+		* @size --- auto（default value）| length | percentage | cover | contain
+
+**2. example**
+
+	div {
+		.x-background-size(50% 50%);
+	}
+
+**3. source**
+
+* [http://www.css3.info/preview/background-size/](http://www.css3.info/preview/background-size/)
+
+* [http://www.w3school.com.cn/cssref/pr_background-size.asp](http://www.w3school.com.cn/cssref/pr_background-size.asp)
 <br>
 ### x-border-radius
 
@@ -81,6 +169,10 @@
 	div {
 		.x-border-radius(3px, left);  // set topleft and bottomleft corners
 	}
+
+**3. source**
+
+* [http://css-tricks.com/almanac/properties/b/border-radius/](http://css-tricks.com/almanac/properties/b/border-radius/)
 <br>
 ### x-border-triangle
 
@@ -101,6 +193,10 @@
 	div {
 		.x-border-triangle(5px, #666, top);
 	}
+
+**3. source**
+
+* [http://css-tricks.com/examples/ShapesOfCSS/](http://css-tricks.com/examples/ShapesOfCSS/)
 <br>
 ### x-box-shadow
 
@@ -113,6 +209,10 @@
 	div {
 		.x-box-shadow(5px 5px 3px #000);
 	}
+
+**3. source**
+
+* [http://css-tricks.com/snippets/css/css-box-shadow/](http://css-tricks.com/snippets/css/css-box-shadow/)
 <br>
 ### x-box-sizing
 
@@ -129,6 +229,10 @@
 	div {
 		.x-box-sizing(border-box);
 	}
+
+**3. source**
+
+* [http://css-tricks.com/box-sizing/](http://css-tricks.com/box-sizing/)
 <br>
 ### x-clearfix
 
@@ -141,6 +245,10 @@
 	div {
 		.x-clearfix();
 	}
+
+**3. source**
+
+* [http://css-tricks.com/snippets/css/clear-fix/](http://css-tricks.com/snippets/css/clear-fix/)
 <br>
 ### x-font-face
 
@@ -156,6 +264,10 @@
 		font-family: 'iconfont';
 	}
 
+**3. source**
+
+* [http://css-tricks.com/snippets/css/using-font-face/](http://css-tricks.com/snippets/css/using-font-face/)
+
 <br>
 ### x-grayscale
 
@@ -168,6 +280,26 @@
 	img {
 		.x-grayscale();  // colour image into a gray image
 	}
+
+**3. source**
+
+* [http://css-tricks.com/snippets/css/forcing-grayscale-printing/](http://css-tricks.com/snippets/css/forcing-grayscale-printing/)
+<br>
+### x-hyphenate
+
+**1. usage**
+
+	syntax：.x-hyphenate();
+
+**2. example**
+
+	div {
+		.x-hyphenate();
+	}
+
+**3. source**
+
+* [http://css-tricks.com/almanac/properties/h/hyphenate/](http://css-tricks.com/almanac/properties/h/hyphenate/)
 <br>
 ### x-inline-block
 
@@ -180,6 +312,10 @@
 	div {
 		.x-inline-block();
 	}
+
+**3. source**
+
+* [http://css-tricks.com/snippets/css/cross-browser-inline-block/](http://css-tricks.com/snippets/css/cross-browser-inline-block/)
 <br>
 ### x-linear-gradient
 
@@ -196,6 +332,10 @@
 	div {
 		.x-linear-gradient(to bottom, #000, #fff);
 	}
+
+**3. source**
+
+* [http://css-tricks.com/css3-gradients/](http://css-tricks.com/css3-gradients/)
 <br>
 ### x-min-height
 
@@ -208,6 +348,10 @@
 	div {
 		.x-min-height(100px);
 	}
+
+**3. source**
+
+* [http://css-tricks.com/snippets/css/cross-browser-min-height/#comment-100802](http://css-tricks.com/snippets/css/cross-browser-min-height/#comment-100802)
 <br>
 ### x-opacity
 
@@ -220,6 +364,10 @@
 	div {
 		.x-opacity(0.5);
 	}
+
+**3. source**
+
+* [http://css-tricks.com/almanac/properties/o/opacity/](http://css-tricks.com/almanac/properties/o/opacity/)
 <br>
 ### x-text-overflow
 
@@ -236,6 +384,10 @@
 	div {
 		.x-text-overflow(ellipsis);
 	}
+
+**3. source**
+
+* [http://css-tricks.com/almanac/properties/t/text-overflow/](http://css-tricks.com/almanac/properties/t/text-overflow/)
 <br>
 ### x-transform
 
@@ -287,3 +439,7 @@
 	div:hover {
 		height: 300px;
 	}
+
+**3. source**
+
+* [http://css-tricks.com/almanac/properties/t/transition/](http://css-tricks.com/almanac/properties/t/transition/)

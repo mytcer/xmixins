@@ -1,7 +1,3 @@
-/**
- * x-border-radius
- * @link css-tricks.com/almanac/properties/b/border-radius/
- */
 @mixin x-border-radius($radius, $direction:all) {
 	@if ($direction == all) {
 	    -moz-border-radius: $radius;

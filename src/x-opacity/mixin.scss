@@ -1,10 +1,6 @@
-/**
- * x-opacity
- * @link css-tricks.com/almanac/properties/o/opacity/
- */
 @mixin x-opacity($opacity) {
 	$opacityIE: $opacity * 100;
-	opacity: $opacity;
 	-ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacityIE); // IE 8 & 9
 	filter: alpha(opacity=$opacityIE); // IE 6 & 7
+	opacity: $opacity;
 }

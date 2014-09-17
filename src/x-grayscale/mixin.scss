@@ -1,7 +1,3 @@
-/**
- * x-grayscale
- * @link 
- */
 @mixin x-grayscale() {
 	/* for Chrome, Safari, Opera */
 	-webkit-filter: grayscale(100%);

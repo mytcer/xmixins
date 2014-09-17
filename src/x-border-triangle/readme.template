@@ -17,3 +17,7 @@
 	div {
 		<%=include%>x-border-triangle(5px, #666, top);
 	}
+
+**3. source**
+
+* [http://css-tricks.com/examples/ShapesOfCSS/](http://css-tricks.com/examples/ShapesOfCSS/)

@@ -1,7 +1,3 @@
-/**
- * x-box-shadow
- * @link css-tricks.com/snippets/css/css-box-shadow/
- */
 @mixin x-box-shadow($param) {
  	   -moz-box-shadow: $param;
  	-webkit-box-shadow: $param; 

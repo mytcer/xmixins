@@ -1,22 +1,22 @@
-/**
- * x-linear-gradient
- * @link css-tricks.com/css3-gradients/
- */
 .x-linear-gradient(@direction, @startColor, @endColor) {
-	@xdirection: null;
 
 	.x-if-simulater () when ("@{direction}" = "to bottom") {
-		@xdirection: top;
+	    background: -webkit-linear-gradient(top, @startColor, @endColor);
+	    background: -moz-linear-gradient(top, @startColor, @endColor);
+	    background: -ms-linear-gradient(top, @startColor, @endColor);
+	    background: -o-linear-gradient(top, @startColor, @endColor);
 	    filter: ~"progid:DXImageTransform.Microsoft.gradient(startcolorstr=@{startColor},endcolorstr=@{endColor},gradientType=0)";
 	}
+
 	.x-if-simulater () when ("@{direction}" = "to right") {
-		@xdirection: left;
+	    background: -webkit-linear-gradient(left, @startColor, @endColor);
+	    background: -moz-linear-gradient(left, @startColor, @endColor);
+	    background: -ms-linear-gradient(left, @startColor, @endColor);
+	    background: -o-linear-gradient(left, @startColor, @endColor);
 	    filter: ~"progid:DXImageTransform.Microsoft.gradient(startcolorstr=@{startColor},endcolorstr=@{endColor},gradientType=1)";
 	}
+
 	.x-if-simulater();
-    background: -webkit-linear-gradient(@xdirection, @startColor, @endColor);
-    background: -moz-linear-gradient(@xdirection, @startColor, @endColor);
-    background: -ms-linear-gradient(@xdirection, @startColor, @endColor);
-    background: -o-linear-gradient(@xdirection, @startColor, @endColor);
+
     background: linear-gradient(@direction, @startColor, @endColor);
 }

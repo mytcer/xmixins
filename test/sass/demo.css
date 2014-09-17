@@ -28,16 +28,94 @@
   -o-animation: test 3s ease;
   animation: test 3s ease; }
 
+#x-appearance-example span {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  padding: 5px;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button; }
+
+#x-background-clip-example span {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 110px;
+  margin: 5px auto;
+  padding: 10px;
+  background: green;
+  border: 4px dashed #ccc; }
+#x-background-clip-example .border {
+  -moz-background-clip: border;
+  -webkit-background-clip: border;
+  background-clip: border-box; }
+#x-background-clip-example .padding {
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding;
+  background-clip: padding-box; }
+#x-background-clip-example .content {
+  -moz-background-clip: content;
+  -webkit-background-clip: content;
+  background-clip: content-box; }
+
+#x-background-origin-example span {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 110px;
+  margin: 5px auto;
+  padding: 10px;
+  background: url(../../images/bg.jpg) no-repeat;
+  border: 4px dashed #ccc; }
+#x-background-origin-example .border {
+  -moz-background-origin: border;
+  -webkit-background-origin: border;
+  background-origin: border-box; }
+#x-background-origin-example .padding {
+  -moz-background-origin: padding;
+  -webkit-background-origin: padding;
+  background-origin: padding-box; }
+#x-background-origin-example .content {
+  -moz-background-origin: content;
+  -webkit-background-origin: content;
+  background-origin: content-box; }
+
 #x-background-retina-example em {
   display: block;
   width: 24px;
   height: 24px;
   margin: 5px auto;
-  background-image: url("http://gtms01.alicdn.com/tps/i1/TB1_Gy5GXXXXXX2XFXXCBGNFFXX-24-24.png"); }
+  background-image: url("../../images/1x.png"); }
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
     #x-background-retina-example em {
-      background-image: url("http://gtms02.alicdn.com/tps/i2/TB1Hhv4FVXXXXaGapXXWA_BHXXX-48-48.png");
+      background-image: url("../../images/2x.png");
       background-size: 24px 24px; } }
+
+#x-background-size-example span {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  background: url(../../images/bg.jpg) no-repeat;
+  border: 1px solid #ccc; }
+#x-background-size-example .size {
+  -webkit-background-size: 50% 50%;
+  -moz-background-size: 50% 50%;
+  -o-background-size: 50% 50%;
+  background-size: 50% 50%; }
+#x-background-size-example .cover {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+#x-background-size-example .contain {
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain; }
 
 #x-border-radius-example {
   -moz-border-radius: 10px;
@@ -202,6 +280,19 @@
   /* for IE6~9 */
   filter: gray; }
 
+#x-hyphenate-example span {
+  display: block;
+  width: 80%;
+  margin: 5px auto;
+  border: 1px solid #ccc;
+  -ms-word-break: break-all;
+  word-break: break-all;
+  word-break: break-word;
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto; }
+
 #x-inline-block-example span {
   display: inline-block;
   *display: inline;
@@ -235,9 +326,9 @@
 #x-opacity-example {
   background: #000;
   color: #fff;
-  opacity: 0.3;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=$opacityIE);
-  filter: alpha(opacity=30); }
+  filter: alpha(opacity=30);
+  opacity: 0.3; }
 
 #x-text-overflow-example {
   overflow: hidden;

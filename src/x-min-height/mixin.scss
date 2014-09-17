@@ -1,7 +1,3 @@
-/**
- * x-min-height
- * @link css-tricks.com/snippets/css/cross-browser-min-height/#comment-100802
- */
 @mixin x-min-height($height) {
 	min-height: $height;
 	_height: $height;

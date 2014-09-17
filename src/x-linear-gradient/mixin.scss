@@ -1,7 +1,3 @@
-/**
- * x-linear-gradient
- * @link css-tricks.com/css3-gradients/
- */
 @mixin x-linear-gradient($direction, $startColor, $endColor) {
 	$xdirection: null;
 	$ie-direction: null;

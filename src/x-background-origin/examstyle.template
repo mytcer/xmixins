@@ -1,0 +1,19 @@
+#x-background-origin-example {
+	span {
+		<%=include%>x-inline-block();
+		width: 110px;
+		margin: 5px auto;
+		padding: 10px;
+		background: url(../../images/bg.jpg) no-repeat;
+		border: 4px dashed #ccc;
+	}
+	.border {
+		<%=include%>x-background-origin();
+	}
+	.padding {
+		<%=include%>x-background-origin(padding-box);
+	}
+	.content {
+		<%=include%>x-background-origin(content-box);
+	}
+}

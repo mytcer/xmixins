@@ -1,0 +1,19 @@
+#x-background-clip-example {
+	span {
+		<%=include%>x-inline-block();
+		width: 110px;
+		margin: 5px auto;
+		padding: 10px;
+		background: green;
+		border: 4px dashed #ccc;
+	}
+	.border {
+		<%=include%>x-background-clip();
+	}
+	.padding {
+		<%=include%>x-background-clip(padding-box);
+	}
+	.content {
+		<%=include%>x-background-clip(content-box);
+	}
+}
