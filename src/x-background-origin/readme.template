@@ -2,11 +2,11 @@
 
 **1. usage**
 
-	syntax：<%=include%>x-background-origin(<%=variable%>value);
+	syntax：<%=include%>x-background-origin(<%=variable%>mode);
 
 	params：
 
-		* <%=variable%>value --- border-box（default value） | padding-box | content-box
+		* <%=variable%>mode --- border-box（default value） | padding-box | content-box
 
 **2. example**
 

@@ -1,0 +1,6 @@
+@mixin x-user-select($mode:text) {
+	-webkit-user-select: $mode;
+	-moz-user-select: $mode;
+	-ms-user-select: $mode;
+	user-select: $mode;  	
+}

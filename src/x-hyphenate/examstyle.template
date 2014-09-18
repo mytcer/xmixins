@@ -1,7 +1,0 @@
-#x-hyphenate-example span {
-	display: block;
-	width: 80%;
-	margin: 5px auto;
-	border: 1px solid #ccc;
-	<%=include%>x-hyphenate();
-}

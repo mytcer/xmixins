@@ -1,19 +1,19 @@
-x-background-clip($value=border-box) {
-	$xvalue=null;
+x-background-clip($mode=border-box) {
+	$xmode=null;
 
-	if ($value == border-box) {
-		$xvalue=border;
+	if ($mode == border-box) {
+		$xmode=border;
 	}
 
-	if ($value == padding-box) {
-		$xvalue=padding;
+	if ($mode == padding-box) {
+		$xmode=padding;
 	}
 
-	if ($value == content-box) {
-		$xvalue=content;
+	if ($mode == content-box) {
+		$xmode=content;
 	}
 
-	-moz-background-clip: $xvalue;
-	-webkit-background-clip: $xvalue;
-	background-clip: $value; 	
+	-moz-background-clip: $xmode;
+	-webkit-background-clip: $xmode;
+	background-clip: $mode; 	
 }

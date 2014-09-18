@@ -1,0 +1,8 @@
+#x-hyphens-example span {
+	display: block;
+	width: 60%;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #ccc;
+	<%=include%>x-hyphens();
+}

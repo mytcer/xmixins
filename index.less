@@ -9,47 +9,47 @@
 	-moz-appearance: @value;
 	appearance: @value;	
 }
-.x-background-clip(@value: border-box) {
+.x-background-clip(@mode: border-box) {
 
-	.x-if-simulater () when (@value = border-box) {
+	.x-if-simulater () when (@mode = border-box) {
 		-moz-background-clip: border;
 		-webkit-background-clip: border;
 	}
 
-	.x-if-simulater () when (@value = padding-box) {
+	.x-if-simulater () when (@mode = padding-box) {
 		-moz-background-clip: padding;
 		-webkit-background-clip: padding;
 	}
 
-	.x-if-simulater () when (@value = content-box) {
+	.x-if-simulater () when (@mode = content-box) {
 		-moz-background-clip: content;
 		-webkit-background-clip: content;
 	}
 
 	.x-if-simulater();
 	
-	background-clip: @value; 	
+	background-clip: @mode; 	
 }
-.x-background-origin(@value: border-box) {
+.x-background-origin(@mode: border-box) {
 
-	.x-if-simulater () when (@value = border-box) {
+	.x-if-simulater () when (@mode = border-box) {
 		-moz-background-origin: border;
 		-webkit-background-origin: border;
 	}
 
-	.x-if-simulater () when (@value = padding-box) {
+	.x-if-simulater () when (@mode = padding-box) {
 		-moz-background-origin: padding;
 		-webkit-background-origin: padding;
 	}
 
-	.x-if-simulater () when (@value = content-box) {
+	.x-if-simulater () when (@mode = content-box) {
 		-moz-background-origin: content;
 		-webkit-background-origin: content;
 	}
 
 	.x-if-simulater();
 
-	background-origin: @value; 	
+	background-origin: @mode; 	
 }
 .x-background-retina(@img_1x, @img_2x, @width_1x, @height_1x) {
 	background-image: url(@img_1x);
@@ -206,14 +206,14 @@
     /* for IE6~9 */
 	filter: gray;
 }
-.x-hyphenate() {
+.x-hyphens(@mode:auto) {
 	-ms-word-break: break-all;
 	word-break: break-all;
 	word-break: break-word;
-	-webkit-hyphens: auto;
-	-moz-hyphens: auto;
-	-ms-hyphens: auto;
-	hyphens: auto;	
+	-webkit-hyphens: @mode;
+	-moz-hyphens: @mode;
+	-ms-hyphens: @mode;
+	hyphens: @mode;	
 }
 .x-inline-block() {
     display: inline-block;
@@ -253,6 +253,21 @@
 	filter: ~"alpha(opacity=@{opacityIE})"; // IE 6 & 7
 	opacity: @opacity;
 }
+.x-placeholder(@color) {
+	&::-moz-placeholder {
+		color: @color;
+		opacity: 1;
+	}
+	&:-moz-placeholder {
+		color: @color;
+	}
+	&:-ms-input-placeholder {
+		color: @color; 
+	}
+	&::-webkit-input-placeholder {
+		color: @color; 
+	}
+}
 .x-text-overflow(@cutway: clip) {
 	overflow: hidden;
   	text-overflow: @cutway;
@@ -270,4 +285,10 @@
     -moz-transition: @value;
     -o-transition: @value;
     transition: @value;	
+}
+.x-user-select(@mode:text) {
+	-webkit-user-select: @mode;
+	-moz-user-select: @mode;
+	-ms-user-select: @mode;
+	user-select: @mode;  	
 }

@@ -1,0 +1,3 @@
+#x-placeholder-example input {
+	<%=include%>x-placeholder(red);
+}

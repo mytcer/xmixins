@@ -1,0 +1,16 @@
+#x-user-select-example {
+	span {
+		display: block;
+		width: 60%;
+		margin: 5px auto;
+		padding: 5px;
+		<%=include%>x-hyphens();
+		border: 1px solid #ccc;
+	}
+	.none {
+		<%=include%>x-user-select(none);	
+	}
+	.text {
+		<%=include%>x-user-select();
+	}
+}

@@ -9,43 +9,43 @@ x-appearance($value) {
 	-moz-appearance: $value;
 	appearance: $value;	
 }
-x-background-clip($value=border-box) {
-	$xvalue=null;
+x-background-clip($mode=border-box) {
+	$xmode=null;
 
-	if ($value == border-box) {
-		$xvalue=border;
+	if ($mode == border-box) {
+		$xmode=border;
 	}
 
-	if ($value == padding-box) {
-		$xvalue=padding;
+	if ($mode == padding-box) {
+		$xmode=padding;
 	}
 
-	if ($value == content-box) {
-		$xvalue=content;
+	if ($mode == content-box) {
+		$xmode=content;
 	}
 
-	-moz-background-clip: $xvalue;
-	-webkit-background-clip: $xvalue;
-	background-clip: $value; 	
+	-moz-background-clip: $xmode;
+	-webkit-background-clip: $xmode;
+	background-clip: $mode; 	
 }
-x-background-origin($value=border-box) {
-	$xvalue=null;
+x-background-origin($mode=border-box) {
+	$xmode=null;
 
-	if ($value == border-box) {
-		$xvalue=border;
+	if ($mode == border-box) {
+		$xmode=border;
 	}
 
-	if ($value == padding-box) {
-		$xvalue=padding;
+	if ($mode == padding-box) {
+		$xmode=padding;
 	}
 
-	if ($value == content-box) {
-		$xvalue=content;
+	if ($mode == content-box) {
+		$xmode=content;
 	}
 
-	-moz-background-origin: $xvalue;
-	-webkit-background-origin: $xvalue;
-	background-origin: $value; 	
+	-moz-background-origin: $xmode;
+	-webkit-background-origin: $xmode;
+	background-origin: $mode; 	
 }
 x-background-retina($img_1x, $img_2x, $width_1x, $height_1x) {
 	background-image: url($img_1x);
@@ -198,14 +198,14 @@ x-grayscale() {
     /* for IE6~9, disable stylus convert gray to #808080 by stylus's unquote method */
 	filter: unquote("gray");
 }
-x-hyphenate() {
+x-hyphens($mode=auto) {
 	-ms-word-break: break-all;
 	word-break: break-all;
 	word-break: break-word;
-	-webkit-hyphens: auto;
-	-moz-hyphens: auto;
-	-ms-hyphens: auto;
-	hyphens: auto;	
+	-webkit-hyphens: $mode;
+	-moz-hyphens: $mode;
+	-ms-hyphens: $mode;
+	hyphens: $mode;	
 }
 x-inline-block() {
     display: inline-block;
@@ -242,6 +242,21 @@ x-opacity($opacity) {
 	filter unquote('alpha(opacity=' + $opacityIE + ')'); // IE 6 & 7
 	opacity: $opacity;
 }
+x-placeholder($color) {
+	&::-moz-placeholder {
+		color: $color;
+		opacity: 1;
+	}
+	&:-moz-placeholder {
+		color: $color;
+	}
+	&:-ms-input-placeholder {
+		color: $color; 
+	}
+	&::-webkit-input-placeholder {
+		color: $color; 
+	}	
+}
 x-text-overflow($cutway=clip) {
 	overflow: hidden;
   	text-overflow: $cutway;
@@ -259,4 +274,10 @@ x-transition($value) {
     -moz-transition: $value;
     -o-transition: $value;
     transition: $value;	
+}
+x-user-select($mode=text) {
+	-webkit-user-select: $mode;
+	-moz-user-select: $mode;
+	-ms-user-select: $mode;
+	user-select: $mode;  	
 }

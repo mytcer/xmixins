@@ -1,21 +1,21 @@
-.x-background-clip(@value: border-box) {
+.x-background-clip(@mode: border-box) {
 
-	.x-if-simulater () when (@value = border-box) {
+	.x-if-simulater () when (@mode = border-box) {
 		-moz-background-clip: border;
 		-webkit-background-clip: border;
 	}
 
-	.x-if-simulater () when (@value = padding-box) {
+	.x-if-simulater () when (@mode = padding-box) {
 		-moz-background-clip: padding;
 		-webkit-background-clip: padding;
 	}
 
-	.x-if-simulater () when (@value = content-box) {
+	.x-if-simulater () when (@mode = content-box) {
 		-moz-background-clip: content;
 		-webkit-background-clip: content;
 	}
 
 	.x-if-simulater();
 	
-	background-clip: @value; 	
+	background-clip: @mode; 	
 }

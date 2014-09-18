@@ -1,19 +1,19 @@
-x-background-origin($value=border-box) {
-	$xvalue=null;
+x-background-origin($mode=border-box) {
+	$xmode=null;
 
-	if ($value == border-box) {
-		$xvalue=border;
+	if ($mode == border-box) {
+		$xmode=border;
 	}
 
-	if ($value == padding-box) {
-		$xvalue=padding;
+	if ($mode == padding-box) {
+		$xmode=padding;
 	}
 
-	if ($value == content-box) {
-		$xvalue=content;
+	if ($mode == content-box) {
+		$xmode=content;
 	}
 
-	-moz-background-origin: $xvalue;
-	-webkit-background-origin: $xvalue;
-	background-origin: $value; 	
+	-moz-background-origin: $xmode;
+	-webkit-background-origin: $xmode;
+	background-origin: $mode; 	
 }

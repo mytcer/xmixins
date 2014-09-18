@@ -44,19 +44,19 @@ module.exports = function(grunt) {
             files: [{
                 file: outputFileName + '.less.tmp',
                 content: convert(originFilePath, 'less')
-   }, {
+            }, {
                 file: outputFileName + '.scss.tmp',
                 content: convert(originFilePath, 'scss')
-   }, {
+            }, {
                 file: outputFileName + '.styl.tmp',
                 content: convert(originFilePath, 'styl')
-   }]
+            }]
         });
     }
 
     grunt.registerTask('generate', function() {
         globule.find({
-            src: ['**/readme.template', '**/examstyle.template'],
+            src: ['**/readme.template', '**/example.style'],
             srcBase: grunt.config('srcDir') + '/',
             prefixBase: true
         }).forEach(generateFiles);

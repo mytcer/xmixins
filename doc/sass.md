@@ -56,11 +56,11 @@
 
 **1. usage**
 
-	syntax：@include x-background-clip($value);
+	syntax：@include x-background-clip($mode);
 
 	params：
 
-		* $value --- border-box（default value） | padding-box | content-box
+		* $mode --- border-box（default value） | padding-box | content-box
 
 **2. example**
 
@@ -78,11 +78,11 @@
 
 **1. usage**
 
-	syntax：@include x-background-origin($value);
+	syntax：@include x-background-origin($mode);
 
 	params：
 
-		* $value --- border-box（default value） | padding-box | content-box
+		* $mode --- border-box（default value） | padding-box | content-box
 
 **2. example**
 
@@ -285,16 +285,20 @@
 
 * [http://css-tricks.com/snippets/css/forcing-grayscale-printing/](http://css-tricks.com/snippets/css/forcing-grayscale-printing/)
 <br>
-### x-hyphenate
+### x-hyphens
 
 **1. usage**
 
-	syntax：@include x-hyphenate();
+	syntax：@include x-hyphens($mode);
+
+	params：
+
+		* $mode --- none | manual | auto（default value）
 
 **2. example**
 
 	div {
-		@include x-hyphenate();
+		@include x-hyphens();
 	}
 
 **3. source**
@@ -368,6 +372,28 @@
 **3. source**
 
 * [http://css-tricks.com/almanac/properties/o/opacity/](http://css-tricks.com/almanac/properties/o/opacity/)
+<br>
+### x-placeholder
+
+**1. usage**
+
+	syntax：@include x-placeholder($color);
+
+	params：
+
+		* $color --- The placeholder text's color
+
+**2. example**
+
+	input {
+		@include x-placeholder(red);
+	}
+
+**3. source**
+
+* [http://css-tricks.com/almanac/selectors/p/placeholder/](http://css-tricks.com/almanac/selectors/p/placeholder/)
+
+* [https://github.com/twbs/bootstrap/pull/11526](https://github.com/twbs/bootstrap/pull/11526)
 <br>
 ### x-text-overflow
 
@@ -443,3 +469,32 @@
 **3. source**
 
 * [http://css-tricks.com/almanac/properties/t/transition/](http://css-tricks.com/almanac/properties/t/transition/)
+
+<br>
+### x-user-select
+
+**1. usage**
+
+	syntax：@include x-user-select($mode);
+
+	params：
+
+		* $mode --- none | text（default value）
+
+	note：
+
+		* $mode has other values（such as "all", "element"）, but has compatibility problems.
+
+**2. example**
+
+	div {
+		@include x-user-select();
+	}
+
+**3. source**
+
+* [http://css-tricks.com/almanac/properties/u/user-select/](http://css-tricks.com/almanac/properties/u/user-select/)
+
+* [https://developer.mozilla.org/en-US/docs/Web/CSS/user-select](https://developer.mozilla.org/en-US/docs/Web/CSS/user-select)
+
+* [http://www.w3.org/TR/2000/WD-css3-userint-20000216#user-select](http://www.w3.org/TR/2000/WD-css3-userint-20000216#user-select)

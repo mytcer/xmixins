@@ -23,7 +23,7 @@ module.exports = function(grunt) {
                     }
                 }
             }, {
-                file: 'examstyle.template',
+                file: 'example.style',
                 content: {
                     template: taskDir + 'example.style.handlebars',
                     data: {

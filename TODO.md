@@ -7,4 +7,6 @@
 * flexbox
 * columns
 * region
-* hyphenate（done）
+* hyphens（done）
+* placeholder（done）
+* user-select（done）

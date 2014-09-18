@@ -1,0 +1,19 @@
+### x-hyphens
+
+**1. usage**
+
+	syntax：<%=include%>x-hyphens(<%=variable%>mode);
+
+	params：
+
+		* <%=variable%>mode --- none | manual | auto（default value）
+
+**2. example**
+
+	div {
+		<%=include%>x-hyphens();
+	}
+
+**3. source**
+
+* [http://css-tricks.com/almanac/properties/h/hyphenate/](http://css-tricks.com/almanac/properties/h/hyphenate/)
