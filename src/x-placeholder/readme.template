@@ -1,4 +1,4 @@
-### x-placeholder
+### **x-placeholder**
 
 > Description：set placeholder text color .
 
@@ -19,5 +19,4 @@
 **3. source**
 
 * [http://css-tricks.com/almanac/selectors/p/placeholder/](http://css-tricks.com/almanac/selectors/p/placeholder/)
-
 * [https://github.com/twbs/bootstrap/pull/11526](https://github.com/twbs/bootstrap/pull/11526)
