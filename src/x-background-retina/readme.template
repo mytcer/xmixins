@@ -21,3 +21,4 @@
 	div {
 		<%=include%>x-background-retina("1x.png", "2x.png", 24px, 24px);
 	}
+	

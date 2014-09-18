@@ -25,7 +25,7 @@ module.exports = function(grunt) {
             // generate doc
             doc: {
                 options: {
-                    separator: '\r\n<br><br>\r\n'
+                    separator: '\r\n\r\n<br>\r\n\r\n'
                 },
                 files: {
                     '<%= docDir %>/less.md': ['<%= mixinDocFilePath %>.less.tmp'],

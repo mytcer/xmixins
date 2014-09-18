@@ -33,7 +33,10 @@
 **3. source**
 
 * [http://css-tricks.com/almanac/properties/a/animation/](http://css-tricks.com/almanac/properties/a/animation/)
-<br><br>
+
+
+<br>
+
 ### **x-appearance**
 
 > Description：css3 appearance
@@ -55,7 +58,10 @@
 **3. source**
 
 * [http://css-tricks.com/almanac/properties/a/appearance/](http://css-tricks.com/almanac/properties/a/appearance/)
-<br><br>
+
+
+<br>
+
 ### **x-background-clip**
 
 > Description：css3 background-clip
@@ -78,7 +84,10 @@
 
 * [http://www.w3school.com.cn/cssref/pr_background-clip.asp](http://www.w3school.com.cn/cssref/pr_background-clip.asp)
 * [http://css-tricks.com/transparent-borders-with-background-clip/](http://css-tricks.com/transparent-borders-with-background-clip/)
-<br><br>
+
+
+<br>
+
 ### **x-background-origin**
 
 > Description：css3 background-origin
@@ -100,7 +109,10 @@
 **3. source**
 
 * [http://www.w3school.com.cn/cssref/pr_background-origin.asp](http://www.w3school.com.cn/cssref/pr_background-origin.asp)
-<br><br>
+
+
+<br>
+
 ### **x-background-retina**
 
 > Description：background image support retina screen .
@@ -124,7 +136,10 @@
 	div {
 		@include x-background-retina("1x.png", "2x.png", 24px, 24px);
 	}
-<br><br>
+	
+
+<br>
+
 ### **x-background-size**
 
 > Description：css3 background-size
@@ -147,7 +162,10 @@
 
 * [http://www.css3.info/preview/background-size/](http://www.css3.info/preview/background-size/)
 * [http://www.w3school.com.cn/cssref/pr_background-size.asp](http://www.w3school.com.cn/cssref/pr_background-size.asp)
-<br><br>
+
+
+<br>
+
 ### **x-border-radius**
 
 > Description：css3 border-radius
@@ -185,7 +203,10 @@
 **3. source**
 
 * [http://css-tricks.com/almanac/properties/b/border-radius/](http://css-tricks.com/almanac/properties/b/border-radius/)
-<br><br>
+
+
+<br>
+
 ### **x-border-triangle**
 
 > Description：border triangle
@@ -211,7 +232,10 @@
 **3. source**
 
 * [http://css-tricks.com/examples/ShapesOfCSS/](http://css-tricks.com/examples/ShapesOfCSS/)
-<br><br>
+
+
+<br>
+
 ### **x-box-shadow**
 
 > Description：css3 box-shadow
@@ -229,7 +253,10 @@
 **3. source**
 
 * [http://css-tricks.com/snippets/css/css-box-shadow/](http://css-tricks.com/snippets/css/css-box-shadow/)
-<br><br>
+
+
+<br>
+
 ### **x-box-sizing**
 
 > Description：css3 box-sizing
@@ -251,7 +278,10 @@
 **3. source**
 
 * [http://css-tricks.com/box-sizing/](http://css-tricks.com/box-sizing/)
-<br><br>
+
+
+<br>
+
 ### **x-clearfix**
 
 > Description：clear float
@@ -269,7 +299,10 @@
 **3. source**
 
 * [http://css-tricks.com/snippets/css/clear-fix/](http://css-tricks.com/snippets/css/clear-fix/)
-<br><br>
+
+
+<br>
+
 ### **x-font-face**
 
 > Description：css3 @font-face
@@ -290,7 +323,10 @@
 
 * [http://css-tricks.com/snippets/css/using-font-face/](http://css-tricks.com/snippets/css/using-font-face/)
 
-<br><br>
+
+
+<br>
+
 ### **x-grayscale**
 
 > Description：turn colour image into gray .
@@ -308,7 +344,10 @@
 **3. source**
 
 * [http://css-tricks.com/snippets/css/forcing-grayscale-printing/](http://css-tricks.com/snippets/css/forcing-grayscale-printing/)
-<br><br>
+
+
+<br>
+
 ### **x-hyphens**
 
 > Description：css3 hyphens
@@ -330,7 +369,10 @@
 **3. source**
 
 * [http://css-tricks.com/almanac/properties/h/hyphenate/](http://css-tricks.com/almanac/properties/h/hyphenate/)
-<br><br>
+
+
+<br>
+
 ### **x-inline-block**
 
 > Description：inline-block
@@ -348,7 +390,10 @@
 **3. source**
 
 * [http://css-tricks.com/snippets/css/cross-browser-inline-block/](http://css-tricks.com/snippets/css/cross-browser-inline-block/)
-<br><br>
+
+
+<br>
+
 ### **x-linear-gradient**
 
 > Description：css3 linear-gradient
@@ -370,7 +415,10 @@
 **3. source**
 
 * [http://css-tricks.com/css3-gradients/](http://css-tricks.com/css3-gradients/)
-<br><br>
+
+
+<br>
+
 ### **x-min-height**
 
 > Description：min-height
@@ -388,7 +436,10 @@
 **3. source**
 
 * [http://css-tricks.com/snippets/css/cross-browser-min-height/#comment-100802](http://css-tricks.com/snippets/css/cross-browser-min-height/#comment-100802)
-<br><br>
+
+
+<br>
+
 ### **x-opacity**
 
 > Description：opacity
@@ -406,7 +457,10 @@
 **3. source**
 
 * [http://css-tricks.com/almanac/properties/o/opacity/](http://css-tricks.com/almanac/properties/o/opacity/)
-<br><br>
+
+
+<br>
+
 ### **x-placeholder**
 
 > Description：set placeholder text color .
@@ -429,7 +483,10 @@
 
 * [http://css-tricks.com/almanac/selectors/p/placeholder/](http://css-tricks.com/almanac/selectors/p/placeholder/)
 * [https://github.com/twbs/bootstrap/pull/11526](https://github.com/twbs/bootstrap/pull/11526)
-<br><br>
+
+
+<br>
+
 ### **x-text-overflow**
 
 > Description：text-overflow
@@ -451,7 +508,10 @@
 **3. source**
 
 * [http://css-tricks.com/almanac/properties/t/text-overflow/](http://css-tricks.com/almanac/properties/t/text-overflow/)
-<br><br>
+
+
+<br>
+
 ### **x-transform**
 
 > Description：css3 transform
@@ -474,7 +534,10 @@
 
 * [The available transform functions](http://www.w3school.com.cn/cssref/pr_transform.asp)
 
-<br><br>
+
+
+<br>
+
 ### **x-transition**
 
 > Description：css3 transition
@@ -511,7 +574,10 @@
 
 * [http://css-tricks.com/almanac/properties/t/transition/](http://css-tricks.com/almanac/properties/t/transition/)
 
-<br><br>
+
+
+<br>
+
 ### **x-user-select**
 
 > Description：css3 user-select
