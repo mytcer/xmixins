@@ -1,5 +1,7 @@
 ### x-border-triangle
 
+> Description：border triangle
+
 **1. usage**
 
 	syntax：<%=include%>x-border-triangle(<%=variable%>borderWidth, <%=variable%>borderColor, <%=variable%>direction);

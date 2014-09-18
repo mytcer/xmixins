@@ -50,26 +50,35 @@
 
 **(1) standard**
 
-| mixin name | description | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-|x-border-radius | border-radius | 9+ | √ | √ | √ | √ | √ |
-|x-box-shadow | box-shadow | 9+ | √ | √ | √ | √ | √ |
-|x-box-sizing | box-sizing |9+ | √ | √ | √ | √ | √ |
-|x-text-overflow | text-overflow | 6+ | √ | √ | √ | √ | √ |
-|x-min-height | min-height | 6+ | √ | √ | √ | √ | √ |
-|x-opacity | opacity | 6+ | √ | √ | √ | √ | √ |
-|x-inline-block | inline-block | 6+ | √ | √ | √ | √ | √ |
-|x-font-face | font-face | 6+ | √ | √ | √ | √ | √ |
-|x-linear-gradient | linear-gradient | 6+ | √ | √ | √ | √ | √ |
-|x-transform | transform | 9+ | √ | √ | √ | √ | √ |
-|x-transition | transition | 10+ | √ | √ | √ | √ | √ |
-|x-animation | animation | 10+ | √ | √ | √ | √ | √ |
+| mixin name | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+|x-appearance | X | √ | √ | √ | √ | √ |
+|x-animation | 10+ | √ | √ | √ | √ | √ |
+|x-background-clip | 9+ | √ | √ | √ | √ | √ |
+|x-background-origin | 9+ | √ | √ | √ | √ | √ |
+|x-background-size | 9+ | √ | √ | √ | √ | √ |
+|x-border-radius | 9+ | √ | √ | √ | √ | √ |
+|x-box-shadow | 9+ | √ | √ | √ | √ | √ |
+|x-box-sizing | 9+ | √ | √ | √ | √ | √ |
+|x-text-overflow | 6+ | √ | √ | √ | √ | √ |
+|x-min-height | 6+ | √ | √ | √ | √ | √ |
+|x-opacity | 6+ | √ | √ | √ | √ | √ |
+|x-inline-block | 6+ | √ | √ | √ | √ | √ |
+|x-font-face | 6+ | √ | √ | √ | √ | √ |
+|x-linear-gradient | 6+ | √ | √ | √ | √ | √ |
+|x-transform | 9+ | √ | √ | √ | √ | √ |
+|x-transition | 10+ | √ | √ | √ | √ | √ |
+|x-hyphens | 6+ | √ | √ | √ | √ | √ |
+|x-user-select | 10+ | √ | √ | √ | √ | √ |
+
 
 **(2) non-standard**
 
-| mixin name | description | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
-|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
-|x-clearfix | clear float | 6+ | √ | √ | √ | √ | √ |
-|x-border-triangle | border triangle | 6+ | √ | √ | √ | √ | √ |
-|x-grayscale | turn colour image into gray image | 6~9 | √ | √ | √ | √ | √ |
-|x-background-retina | background image support retina | 6+ | √ | √ | √ | √ | √ |
+| mixin name | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+|x-background-retina | 6+ | √ | √ | √ | √ | √ |
+|x-border-triangle | 6+ | √ | √ | √ | √ | √ |
+|x-clearfix | 6+ | √ | √ | √ | √ | √ |
+|x-grayscale | 6~9 | √ | √ | √ | √ | √ |
+|x-placeholder | 10+ | √ | √ | √ | √ | √ |
+

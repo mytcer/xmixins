@@ -1,5 +1,7 @@
 ### x-clearfix
 
+> Description：clear float
+
 **1. usage**
 
 	syntax：<%=include%>x-clearfix();

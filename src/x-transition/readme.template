@@ -1,5 +1,7 @@
 ### x-transition
 
+> Description：css3 transition
+
 **1. usage**
 
 	syntax：<%=include%>x-transition(<%=variable%>value);

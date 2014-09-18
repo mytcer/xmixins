@@ -1,5 +1,7 @@
 ### x-linear-gradient
 
+> Description：css3 linear-gradient
+
 **1. usage**
 
 	syntax：<%=include%>x-linear-gradient(<%=variable%>direction, <%=variable%>startColor, <%=variable%>endColor);

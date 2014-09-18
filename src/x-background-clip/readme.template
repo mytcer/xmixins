@@ -1,5 +1,7 @@
 ### x-background-clip
 
+> Description：css3 background-clip
+
 **1. usage**
 
 	syntax：<%=include%>x-background-clip(<%=variable%>mode);

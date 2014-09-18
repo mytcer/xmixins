@@ -1,4 +1,6 @@
-### x-animation
+### **x-animation**
+
+> Description：css3 animation
 
 **1. usage**
 
@@ -32,7 +34,9 @@
 
 * [http://css-tricks.com/almanac/properties/a/animation/](http://css-tricks.com/almanac/properties/a/animation/)
 <br>
-### x-appearance
+### **x-appearance**
+
+> Description：css3 appearance
 
 **1. usage**
 
@@ -53,6 +57,8 @@
 * [http://css-tricks.com/almanac/properties/a/appearance/](http://css-tricks.com/almanac/properties/a/appearance/)
 <br>
 ### x-background-clip
+
+> Description：css3 background-clip
 
 **1. usage**
 
@@ -76,6 +82,8 @@
 <br>
 ### x-background-origin
 
+> Description：css3 background-origin
+
 **1. usage**
 
 	syntax：.x-background-origin(@mode);
@@ -95,6 +103,8 @@
 * [http://www.w3school.com.cn/cssref/pr_background-origin.asp](http://www.w3school.com.cn/cssref/pr_background-origin.asp)
 <br>
 ### x-background-retina
+
+> Description：background image support retina screen .
 
 **1. usage**
 
@@ -118,6 +128,8 @@
 <br>
 ### x-background-size
 
+> Description：css3 background-size
+
 **1. usage**
 
 	syntax：.x-background-size(@size);
@@ -139,6 +151,8 @@
 * [http://www.w3school.com.cn/cssref/pr_background-size.asp](http://www.w3school.com.cn/cssref/pr_background-size.asp)
 <br>
 ### x-border-radius
+
+> Description：css3 border-radius
 
 **1. usage**
 
@@ -176,6 +190,8 @@
 <br>
 ### x-border-triangle
 
+> Description：border triangle
+
 **1. usage**
 
 	syntax：.x-border-triangle(@borderWidth, @borderColor, @direction);
@@ -200,6 +216,8 @@
 <br>
 ### x-box-shadow
 
+> Description：css3 box-shadow
+
 **1. usage**
 
 	syntax：.x-box-shadow(@params);
@@ -215,6 +233,8 @@
 * [http://css-tricks.com/snippets/css/css-box-shadow/](http://css-tricks.com/snippets/css/css-box-shadow/)
 <br>
 ### x-box-sizing
+
+> Description：css3 box-sizing
 
 **1. usage**
 
@@ -236,6 +256,8 @@
 <br>
 ### x-clearfix
 
+> Description：clear float
+
 **1. usage**
 
 	syntax：.x-clearfix();
@@ -251,6 +273,8 @@
 * [http://css-tricks.com/snippets/css/clear-fix/](http://css-tricks.com/snippets/css/clear-fix/)
 <br>
 ### x-font-face
+
+> Description：css3 @font-face
 
 **1. usage**
 
@@ -271,6 +295,8 @@
 <br>
 ### x-grayscale
 
+> Description：turn colour image into gray .
+
 **1. usage**
 
 	syntax：.x-grayscale();
@@ -286,6 +312,8 @@
 * [http://css-tricks.com/snippets/css/forcing-grayscale-printing/](http://css-tricks.com/snippets/css/forcing-grayscale-printing/)
 <br>
 ### x-hyphens
+
+> Description：css3 hyphens
 
 **1. usage**
 
@@ -307,6 +335,8 @@
 <br>
 ### x-inline-block
 
+> Description：inline-block
+
 **1. usage**
 
 	syntax：.x-inline-block();
@@ -322,6 +352,8 @@
 * [http://css-tricks.com/snippets/css/cross-browser-inline-block/](http://css-tricks.com/snippets/css/cross-browser-inline-block/)
 <br>
 ### x-linear-gradient
+
+> Description：css3 linear-gradient
 
 **1. usage**
 
@@ -343,6 +375,8 @@
 <br>
 ### x-min-height
 
+> Description：min-height
+
 **1. usage**
 
 	syntax：.x-min-height(@height);
@@ -359,6 +393,8 @@
 <br>
 ### x-opacity
 
+> Description：opacity
+
 **1. usage**
 
 	syntax：.x-opacity(@opacity);
@@ -374,6 +410,8 @@
 * [http://css-tricks.com/almanac/properties/o/opacity/](http://css-tricks.com/almanac/properties/o/opacity/)
 <br>
 ### x-placeholder
+
+> Description：set placeholder text color .
 
 **1. usage**
 
@@ -397,6 +435,8 @@
 <br>
 ### x-text-overflow
 
+> Description：text-overflow
+
 **1. usage**
 
 	syntax：.x-text-overflow(@cutway);
@@ -416,6 +456,8 @@
 * [http://css-tricks.com/almanac/properties/t/text-overflow/](http://css-tricks.com/almanac/properties/t/text-overflow/)
 <br>
 ### x-transform
+
+> Description：css3 transform
 
 **1. usage**
 
@@ -437,6 +479,8 @@
 
 <br>
 ### x-transition
+
+> Description：css3 transition
 
 **1. usage**
 
@@ -473,17 +517,19 @@
 <br>
 ### x-user-select
 
+> Description：css3 user-select
+
 **1. usage**
 
 	syntax：.x-user-select(@mode);
 
 	params：
 
-		* @mode --- none | text（default value）
+		* @mode --- none | text（default value）| toggle | element | elements | all | inherit
 
 	note：
 
-		* @mode has other values（such as "all", "element"）, but has compatibility problems.
+		* In addition to “none" and "text", other value has compatibility problems.
 
 **2. example**
 

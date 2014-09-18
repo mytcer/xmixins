@@ -1,5 +1,7 @@
 ### x-background-size
 
+> Description：css3 background-size
+
 **1. usage**
 
 	syntax：<%=include%>x-background-size(<%=variable%>size);

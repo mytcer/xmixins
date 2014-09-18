@@ -1,5 +1,7 @@
 ### x-background-origin
 
+> Description：css3 background-origin
+
 **1. usage**
 
 	syntax：<%=include%>x-background-origin(<%=variable%>mode);

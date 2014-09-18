@@ -1,5 +1,7 @@
 ### x-grayscale
 
+> Description：turn colour image into gray .
+
 **1. usage**
 
 	syntax：<%=include%>x-grayscale();

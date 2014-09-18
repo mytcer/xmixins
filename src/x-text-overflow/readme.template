@@ -1,5 +1,7 @@
 ### x-text-overflow
 
+> Description：text-overflow
+
 **1. usage**
 
 	syntax：<%=include%>x-text-overflow(<%=variable%>cutway);

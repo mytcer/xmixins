@@ -1,8 +1,15 @@
-### v0.4.0（doing...）
+### v0.4.0
 
 | mixin name | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+|x-appearance | X | √ | √ | √ | √ | √ |
 |x-background-retina | 6+ | √ | √ | √ | √ | √ |
+|x-background-clip | 9+ | √ | √ | √ | √ | √ |
+|x-background-origin | 9+ | √ | √ | √ | √ | √ |
+|x-background-size | 9+ | √ | √ | √ | √ | √ |
+|x-hyphens | 6+ | √ | √ | √ | √ | √ |
+|x-placeholder | 10+ | √ | √ | √ | √ | √ |
+|x-user-select | 10+ | √ | √ | √ | √ | √ |
 
 <br>
 

@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 
     var mkfiles = require('mkfiles');
 
-    function generateFiles(modName, link) {
+    function generateFiles(modName, desc) {
         var taskDir = './tasks/add/';
 
         mkfiles({
@@ -35,7 +35,8 @@ module.exports = function(grunt) {
                 content: {
                     template: taskDir + 'readme.handlebars',
                     data: {
-                        modName: modName
+                        modName: modName,
+                        desc: desc
                     }
                 }
             }, {
@@ -44,8 +45,7 @@ module.exports = function(grunt) {
                     template: taskDir + 'mixin.handlebars',
                     data: {
                         modName: modName,
-                        define: '.',
-                        link: link
+                        define: '.'
                     }
                 }
             }, {
@@ -54,8 +54,7 @@ module.exports = function(grunt) {
                     template: taskDir + 'mixin.handlebars',
                     data: {
                         modName: modName,
-                        define: '@mixin ',
-                        link: link
+                        define: '@mixin '
                     }
                 }
             }, {
@@ -64,21 +63,20 @@ module.exports = function(grunt) {
                     template: taskDir + 'mixin.handlebars',
                     data: {
                         modName: modName,
-                        define: '',
-                        link: link
+                        define: ''
                     }
                 }
             }]
         });
     }
 
-    grunt.registerTask('add', function(modName, link) {
+    grunt.registerTask('add', function(modName, desc) {
         // mixin module name must begin with 'x-'
         if (modName.substring(0, 2) != 'x-') {
             modName = 'x-' + modName;
         }
 
-        generateFiles(modName, link || '');
+        generateFiles(modName, desc || '');
     });
 
 };

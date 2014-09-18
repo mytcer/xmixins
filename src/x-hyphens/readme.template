@@ -1,5 +1,7 @@
 ### x-hyphens
 
+> Description：css3 hyphens
+
 **1. usage**
 
 	syntax：<%=include%>x-hyphens(<%=variable%>mode);

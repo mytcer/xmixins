@@ -1,5 +1,7 @@
 ### x-border-radius
 
+> Description：css3 border-radius
+
 **1. usage**
 
 	syntax：<%=include%>x-border-radius(<%=variable%>radius, <%=variable%>direction);

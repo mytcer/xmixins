@@ -1,5 +1,7 @@
 ### x-placeholder
 
+> Description：set placeholder text color .
+
 **1. usage**
 
 	syntax：<%=include%>x-placeholder(<%=variable%>color);

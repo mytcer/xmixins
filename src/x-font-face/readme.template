@@ -1,5 +1,7 @@
 ### x-font-face
 
+> Description：css3 @font-face
+
 **1. usage**
 
 	syntax：<%=include%>x-font-face(<%=variable%>fontName, <%=variable%>fontUrl); // note：font url without a file extension

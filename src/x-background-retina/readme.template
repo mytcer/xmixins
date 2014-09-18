@@ -1,5 +1,7 @@
 ### x-background-retina
 
+> Description：background image support retina screen .
+
 **1. usage**
 
 	syntax：<%=include%>x-background-retina(<%=variable%>img_1x, <%=variable%>img_2x, <%=variable%>width_1x, <%=variable%>height_1x);

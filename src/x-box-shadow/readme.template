@@ -1,5 +1,7 @@
 ### x-box-shadow
 
+> Description：css3 box-shadow
+
 **1. usage**
 
 	syntax：<%=include%>x-box-shadow(<%=variable%>params);

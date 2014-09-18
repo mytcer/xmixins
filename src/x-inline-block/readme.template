@@ -1,5 +1,7 @@
 ### x-inline-block
 
+> Description：inline-block
+
 **1. usage**
 
 	syntax：<%=include%>x-inline-block();

@@ -1,16 +1,18 @@
 ### x-user-select
 
+> Description：css3 user-select
+
 **1. usage**
 
 	syntax：<%=include%>x-user-select(<%=variable%>mode);
 
 	params：
 
-		* <%=variable%>mode --- none | text（default value）
+		* <%=variable%>mode --- none | text（default value）| toggle | element | elements | all | inherit
 
 	note：
 
-		* <%=variable%>mode has other values（such as "all", "element"）, but has compatibility problems.
+		* In addition to “none" and "text", other value has compatibility problems.
 
 **2. example**
 

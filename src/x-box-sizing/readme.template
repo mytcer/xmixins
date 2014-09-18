@@ -1,5 +1,7 @@
 ### x-box-sizing
 
+> Description：css3 box-sizing
+
 **1. usage**
 
 	syntax：<%=include%>x-box-sizing(<%=variable%>model);

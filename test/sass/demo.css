@@ -90,6 +90,9 @@
   @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
     #x-background-retina-example em {
       background-image: url("../../images/2x.png");
+      -webkit-background-size: 24px 24px;
+      -moz-background-size: 24px 24px;
+      -o-background-size: 24px 24px;
       background-size: 24px 24px; } }
 
 #x-background-size-example span {
