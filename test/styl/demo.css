@@ -394,6 +394,39 @@
   filter: alpha(opacity=30);
   opacity: 0.3;
 }
+#x-perspective-origin-example .default,
+#x-perspective-origin-example .origin {
+  width: 90%;
+  margin: 5px auto;
+  border: 1px solid #ccc;
+  -webkit-perspective: 100px;
+  -moz-perspective: 100px;
+  perspective: 100px;
+}
+#x-perspective-origin-example .default {
+  -webkit-perspective-origin: 50% 50%;
+  -moz-perspective-origin: 50% 50%;
+  perspective-origin: 50% 50%;
+}
+#x-perspective-origin-example .origin {
+  -webkit-perspective-origin: top left;
+  -moz-perspective-origin: top left;
+  perspective-origin: top left;
+}
+#x-perspective-origin-example .child {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  background: #ccc;
+  -webkit-transform: rotateY(30deg);
+  -moz-transform: rotateY(30deg);
+  -ms-transform: rotateY(30deg);
+  -o-transform: rotateY(30deg);
+  transform: rotateY(30deg);
+}
 #x-perspective-example .normal,
 #x-perspective-example .perspective {
   width: 90%;

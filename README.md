@@ -71,6 +71,7 @@
 |x-transition | 10+ | √ | √ | √ | √ | √ |
 |x-hyphens | 6+ | √ | √ | √ | √ | √ |
 |x-perspective | 10+ | √ | √ | √ | √ | √ |
+|x-perspective-origin | 10+ | √ | √ | √ | √ | √ |
 |x-user-select | 10+ | √ | √ | √ | √ | √ |
 
 

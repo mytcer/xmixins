@@ -1,3 +1,13 @@
+### v0.5.0（ongoing）
+
+| mixin name | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+|x-backface-visibility | 10+ | √ | √ | √ | √ | X |
+|x-perspective | 10+ | √ | √ | √ | √ | √ |
+|x-perspective-origin | 10+ | √ | √ | √ | √ | √ |
+
+<br>
+
 ### v0.4.0
 
 | mixin name | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2

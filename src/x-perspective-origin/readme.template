@@ -1,0 +1,30 @@
+### **x-perspective-origin**
+
+> Description：Determines the origin for the perspective property（Actually set the X axis and Y axis position）.
+
+**1. usage**
+
+	syntax：<%=include%>x-perspective-origin(<%=variable%>origin);
+
+	params：
+
+		* <%=variable%>origin --- left|center|right|length|% top|center|bottom|length|%
+
+	note：
+
+		* The default value is "50% 50%" .
+
+		* Must use with the perspective property .
+
+**2. example**
+
+	div {
+		<%=include%>x-perspective(100px);
+		<%=include%>x-perspective-origin(top left);
+	}
+
+**3. source**
+
+* [http://css-tricks.com/almanac/properties/p/perspective-origin/](http://css-tricks.com/almanac/properties/p/perspective-origin/)
+* [http://www.w3cplus.com/css3/transform-basic-property.html](http://www.w3cplus.com/css3/transform-basic-property.html)
+

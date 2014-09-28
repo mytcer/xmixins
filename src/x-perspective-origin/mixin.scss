@@ -1,0 +1,5 @@
+@mixin x-perspective-origin($origin:50% 50%) {
+	-webkit-perspective-origin: $origin;
+	-moz-perspective-origin: $origin;
+	perspective-origin: $origin;
+}

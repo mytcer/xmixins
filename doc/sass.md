@@ -85,7 +85,6 @@
 **3. source**
 
 * [http://css-tricks.com/almanac/properties/b/backface-visibility/](http://css-tricks.com/almanac/properties/b/backface-visibility/)
-
 * [http://www.w3school.com.cn/cssref/pr_backface-visibility.asp](http://www.w3school.com.cn/cssref/pr_backface-visibility.asp)
 
 
@@ -491,6 +490,40 @@
 
 <br>
 
+### **x-perspective-origin**
+
+> Description：Determines the origin for the perspective property（Actually set the X axis and Y axis position）.
+
+**1. usage**
+
+	syntax：@include x-perspective-origin($origin);
+
+	params：
+
+		* $origin --- left|center|right|length|% top|center|bottom|length|%
+
+	note：
+
+		* The default value is "50% 50%" .
+
+		* Must use with the perspective property .
+
+**2. example**
+
+	div {
+		@include x-perspective(100px);
+		@include x-perspective-origin(top left);
+	}
+
+**3. source**
+
+* [http://css-tricks.com/almanac/properties/p/perspective-origin/](http://css-tricks.com/almanac/properties/p/perspective-origin/)
+* [http://www.w3cplus.com/css3/transform-basic-property.html](http://www.w3cplus.com/css3/transform-basic-property.html)
+
+
+
+<br>
+
 ### **x-perspective**
 
 > Description：Gives an element a 3D-space by affecting the distance between the Z plane and the user.
@@ -512,9 +545,7 @@
 **3. source**
 
 * [http://www.zhangxinxu.com/wordpress/2012/09/css3-3d-transform-perspective-animate-transition/](http://www.zhangxinxu.com/wordpress/2012/09/css3-3d-transform-perspective-animate-transition/)
-
 * [http://css-tricks.com/almanac/properties/p/perspective/](http://css-tricks.com/almanac/properties/p/perspective/)
-
 * [http://www.w3cplus.com/css3/transform-basic-property.html](http://www.w3cplus.com/css3/transform-basic-property.html)
 
 

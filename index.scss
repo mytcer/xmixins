@@ -248,6 +248,11 @@
 	filter: alpha(opacity=$opacityIE); // IE 6 & 7
 	opacity: $opacity;
 }
+@mixin x-perspective-origin($origin:50% 50%) {
+	-webkit-perspective-origin: $origin;
+	-moz-perspective-origin: $origin;
+	perspective-origin: $origin;
+}
 @mixin x-perspective($value:none) {
 	-webkit-perspective: $value;
 	-moz-perspective: $value;	
