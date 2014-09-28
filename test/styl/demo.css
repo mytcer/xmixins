@@ -394,6 +394,36 @@
   filter: alpha(opacity=30);
   opacity: 0.3;
 }
+#x-perspective-example .normal,
+#x-perspective-example .perspective {
+  width: 90%;
+  margin: 5px auto;
+  border: 1px solid #ccc;
+}
+#x-perspective-example .normal {
+  -webkit-perspective: none;
+  -moz-perspective: none;
+  perspective: none;
+}
+#x-perspective-example .perspective {
+  -webkit-perspective: 100px;
+  -moz-perspective: 100px;
+  perspective: 100px;
+}
+#x-perspective-example .child {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 30px;
+  height: 30px;
+  margin: 5px;
+  background: #ccc;
+  -webkit-transform: rotateY(30deg);
+  -moz-transform: rotateY(30deg);
+  -ms-transform: rotateY(30deg);
+  -o-transform: rotateY(30deg);
+  transform: rotateY(30deg);
+}
 #x-placeholder-example input::-moz-placeholder {
   color: #f00;
   opacity: 1;

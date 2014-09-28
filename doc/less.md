@@ -491,6 +491,36 @@
 
 <br>
 
+### **x-perspective**
+
+> Description：Gives an element a 3D-space by affecting the distance between the Z plane and the user.
+
+**1. usage**
+
+	syntax：.x-perspective(@value);
+
+	params：
+
+		* @value --- none（default value）| length
+
+**2. example**
+
+	div {
+		.x-perspective(500px);
+	}
+
+**3. source**
+
+* [http://www.zhangxinxu.com/wordpress/2012/09/css3-3d-transform-perspective-animate-transition/](http://www.zhangxinxu.com/wordpress/2012/09/css3-3d-transform-perspective-animate-transition/)
+
+* [http://css-tricks.com/almanac/properties/p/perspective/](http://css-tricks.com/almanac/properties/p/perspective/)
+
+* [http://www.w3cplus.com/css3/transform-basic-property.html](http://www.w3cplus.com/css3/transform-basic-property.html)
+
+
+
+<br>
+
 ### **x-placeholder**
 
 > Description：set placeholder text color .

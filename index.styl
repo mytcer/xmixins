@@ -248,6 +248,11 @@ x-opacity($opacity) {
 	filter unquote('alpha(opacity=' + $opacityIE + ')'); // IE 6 & 7
 	opacity: $opacity;
 }
+x-perspective($value=none) {
+	-webkit-perspective: $value;
+	-moz-perspective: $value;	
+	perspective: $value;
+}
 x-placeholder($color) {
 	&::-moz-placeholder {
 		color: $color;

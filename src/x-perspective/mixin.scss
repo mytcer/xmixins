@@ -1,0 +1,5 @@
+@mixin x-perspective($value:none) {
+	-webkit-perspective: $value;
+	-moz-perspective: $value;	
+	perspective: $value;
+}

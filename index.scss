@@ -248,6 +248,11 @@
 	filter: alpha(opacity=$opacityIE); // IE 6 & 7
 	opacity: $opacity;
 }
+@mixin x-perspective($value:none) {
+	-webkit-perspective: $value;
+	-moz-perspective: $value;	
+	perspective: $value;
+}
 @mixin x-placeholder($color) {
 	&::-moz-placeholder {
 		color: $color;
