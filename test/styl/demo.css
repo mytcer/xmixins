@@ -37,6 +37,39 @@
   -moz-appearance: button;
   appearance: button;
 }
+#x-backface-visibility-example .hidden,
+#x-backface-visibility-example .visible {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
+  width: 60px;
+  margin: 5px auto;
+  padding: 5px;
+  border: 1px solid #ccc;
+}
+#x-backface-visibility-example span {
+  display: block;
+  height: 60px;
+  background: #ff0;
+  border: 1px solid #000;
+  -webkit-transform: rotateY(180deg);
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -o-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+#x-backface-visibility-example .hidden span {
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+#x-backface-visibility-example .visible span {
+  -webkit-backface-visibility: visible;
+  -moz-backface-visibility: visible;
+  -ms-backface-visibility: visible;
+  backface-visibility: visible;
+}
 #x-background-clip-example span {
   display: inline-block;
   *display: inline;

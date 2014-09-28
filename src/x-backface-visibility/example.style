@@ -1,0 +1,23 @@
+#x-backface-visibility-example {
+	.hidden,
+	.visible {
+		<%=include%>x-inline-block();
+		width: 60px;
+		margin: 5px auto;
+		padding: 5px;
+		border: 1px solid #ccc;
+	}
+	span {
+		display: block;
+		height: 60px;
+		background: yellow;
+		border: 1px solid #000;
+		<%=include%>x-transform(rotateY(180deg));
+	}
+	.hidden span {
+		<%=include%>x-backface-visibility(hidden);	
+	}
+	.visible span {
+		<%=include%>x-backface-visibility();	
+	}
+}

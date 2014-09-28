@@ -9,6 +9,12 @@ x-appearance($value) {
 	-moz-appearance: $value;
 	appearance: $value;	
 }
+x-backface-visibility($value=visible) {
+	-webkit-backface-visibility: $value;;
+	-moz-backface-visibility: $value;;
+	-ms-backface-visibility: $value;;	
+	backface-visibility: $value;	
+}
 x-background-clip($mode=border-box) {
 	$xmode=null;
 

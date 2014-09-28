@@ -62,6 +62,36 @@
 
 <br>
 
+### **x-backface-visibility**
+
+> Description：Hidden the back of the rotating element .
+
+**1. usage**
+
+	syntax：.x-backface-visibility(@value);
+
+	params：
+
+		* @value --- visible（default value）| hidden
+
+	note：This is useful to avoid flicker when doing 3D effects .
+
+**2. example**
+
+	div {
+		.x-backface-visibility(hidden);
+	}
+
+**3. source**
+
+* [http://css-tricks.com/almanac/properties/b/backface-visibility/](http://css-tricks.com/almanac/properties/b/backface-visibility/)
+
+* [http://www.w3school.com.cn/cssref/pr_backface-visibility.asp](http://www.w3school.com.cn/cssref/pr_backface-visibility.asp)
+
+
+
+<br>
+
 ### **x-background-clip**
 
 > Description：css3 background-clip
