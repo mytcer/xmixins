@@ -89,7 +89,5 @@
 
 ### 4. Who is using XMixins ?
 
-The following part lists are using XMixins company or project：
-
 ![taobao](./images/taobao.png)
 
