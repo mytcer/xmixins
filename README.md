@@ -85,3 +85,11 @@
 |x-grayscale | 6~9 | √ | √ | √ | √ | √ |
 |x-placeholder | 10+ | √ | √ | √ | √ | √ |
 
+<br>
+
+### 4. Who is using XMixins ?
+
+The following part lists are using XMixins company or project：
+
+![taobao](./images/taobao.png)
+
