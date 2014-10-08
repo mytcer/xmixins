@@ -603,6 +603,41 @@
 
 <br>
 
+### **x-transform-origin**
+
+> Description：lets you modify the origin for transformations of an element. 
+
+**1. usage**
+
+	syntax：@include x-transform-origin($value);
+
+	params：
+
+		* $value --- x-offset y-offset z-offset
+
+			* x-offset --- left|center|right|length|%
+
+			* y-offset --- top|center|bottom|length|%
+
+			* z-offset --- length
+
+		The default value is：50% 50% 0
+
+**2. example**
+
+	div {
+		@include x-transform-origin(top left);
+	}
+
+**3. source**
+
+* [http://www.w3school.com.cn/cssref/pr_transform-origin.asp](http://www.w3school.com.cn/cssref/pr_transform-origin.asp)
+* [http://css-tricks.com/almanac/properties/t/transform-origin/](http://css-tricks.com/almanac/properties/t/transform-origin/)
+
+
+
+<br>
+
 ### **x-transform**
 
 > Description：css3 transform

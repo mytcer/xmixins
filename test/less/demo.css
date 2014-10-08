@@ -483,6 +483,30 @@
   text-overflow: ellipsis;
   white-space: nowrap;
 }
+#x-transform-origin-example span {
+  display: block;
+  background: #ccc;
+  width: 100px;
+  height: 50px;
+  margin: 20px auto;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+#x-transform-origin-example span.default {
+  -webkit-transform-origin: 50% 50% 0;
+  -moz-transform-origin: 50% 50% 0;
+  -ms-transform-origin: 50% 50% 0;
+  transform-origin: 50% 50% 0;
+}
+#x-transform-origin-example span.topleft {
+  -webkit-transform-origin: top left;
+  -moz-transform-origin: top left;
+  -ms-transform-origin: top left;
+  transform-origin: top left;
+}
 #x-transform-example {
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);

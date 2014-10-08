@@ -1,0 +1,15 @@
+#x-transform-origin-example span {
+	display: block;
+	background: #ccc;
+	width: 100px;
+	height: 50px;
+	margin: 20px auto;
+	<%=include%>x-transform(rotate(90deg));
+
+	&.default {
+		<%=include%>x-transform-origin();
+	}
+	&.topleft {
+		<%=include%>x-transform-origin(top left);
+	}
+}

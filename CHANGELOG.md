@@ -5,6 +5,7 @@
 |x-backface-visibility | 10+ | √ | √ | √ | √ | X |
 |x-perspective | 10+ | √ | √ | √ | √ | √ |
 |x-perspective-origin | 10+ | √ | √ | √ | √ | √ |
+|x-transform-origin | 9+ | √ | √ | √ | √ | √ |
 
 <br>
 
