@@ -69,6 +69,7 @@
 |x-linear-gradient | 6+ | √ | √ | √ | √ | √ |
 |x-transform | 9+ | √ | √ | √ | √ | √ |
 |x-transform-origin | 9+ | √ | √ | √ | √ | √ |
+|x-transform-style | X | √ | √ | √ | √ | √ |
 |x-transition | 10+ | √ | √ | √ | √ | √ |
 |x-hyphens | 6+ | √ | √ | √ | √ | √ |
 |x-perspective | 10+ | √ | √ | √ | √ | √ |

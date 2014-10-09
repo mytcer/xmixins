@@ -6,6 +6,7 @@
 |x-perspective | 10+ | √ | √ | √ | √ | √ |
 |x-perspective-origin | 10+ | √ | √ | √ | √ | √ |
 |x-transform-origin | 9+ | √ | √ | √ | √ | √ |
+|x-transform-style | X | √ | √ | √ | √ | √ |
 
 <br>
 

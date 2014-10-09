@@ -638,6 +638,33 @@
 
 <br>
 
+### **x-transform-style**
+
+> Description：determines the element's children are positioned in 3D space, or flattened.
+
+**1. usage**
+
+	syntax：@include x-transform-style($value);
+
+	params：
+
+		* $value --- flat | preserve-3d，
+
+**2. example**
+
+	div {
+		@include x-transform-style(preserve-3d);
+	}
+
+**3. source**
+
+* [http://www.w3school.com.cn/cssref/pr_transform-style.asp](http://www.w3school.com.cn/cssref/pr_transform-style.asp)
+* [http://css-tricks.com/almanac/properties/t/transform-style/](http://css-tricks.com/almanac/properties/t/transform-style/)
+
+
+
+<br>
+
 ### **x-transform**
 
 > Description：css3 transform

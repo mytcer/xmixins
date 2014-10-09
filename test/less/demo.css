@@ -507,6 +507,50 @@
   -ms-transform-origin: top left;
   transform-origin: top left;
 }
+#x-transform-style-example .default,
+#x-transform-style-example .d3 {
+  width: 150px;
+  margin: 0 auto;
+  background: #ccc;
+  -webkit-transform: rotateY(85deg);
+  -moz-transform: rotateY(85deg);
+  -ms-transform: rotateY(85deg);
+  -o-transform: rotateY(85deg);
+  transform: rotateY(85deg);
+}
+#x-transform-style-example .default {
+  -webkit-transform-style: flat;
+  -moz-transform-style: flat;
+  transform-style: flat;
+}
+#x-transform-style-example .d3 {
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+#x-transform-style-example span {
+  display: block;
+  width: 150px;
+  height: 50px;
+  margin: 10px auto;
+  background: #ccc;
+}
+#x-transform-style-example .one {
+  background: red;
+  -webkit-transform: rotateX(30deg);
+  -moz-transform: rotateX(30deg);
+  -ms-transform: rotateX(30deg);
+  -o-transform: rotateX(30deg);
+  transform: rotateX(30deg);
+}
+#x-transform-style-example .two {
+  background: green;
+  -webkit-transform: rotateX(-30deg);
+  -moz-transform: rotateX(-30deg);
+  -ms-transform: rotateX(-30deg);
+  -o-transform: rotateX(-30deg);
+  transform: rotateX(-30deg);
+}
 #x-transform-example {
   -webkit-transform: rotate(20deg);
   -moz-transform: rotate(20deg);

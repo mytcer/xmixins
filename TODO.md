@@ -1,6 +1,5 @@
 ### 0.5.0
 
-* transform-style
 * radial-gradient
 
 <br>

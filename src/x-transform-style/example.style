@@ -1,0 +1,30 @@
+#x-transform-style-example {
+	.default,
+	.d3 {
+		width: 150px;
+		margin: 0 auto;
+		background: #ccc;
+		<%=include%>x-transform(rotateY(85deg));
+	}
+	.default {
+		<%=include%>x-transform-style();	
+	}
+	.d3 {
+		<%=include%>x-transform-style(preserve-3d);
+	}
+	span {
+		display: block;
+		width: 150px;
+		height: 50px;
+		margin: 10px auto;
+		background: #ccc;
+	}
+	.one {
+		background: red;
+		<%=include%>x-transform(rotateX(30deg));		
+	}
+	.two {
+		background: green;
+		<%=include%>x-transform(rotateX(-30deg));		
+	}
+}
