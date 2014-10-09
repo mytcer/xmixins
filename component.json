@@ -1,7 +1,7 @@
 {
   "name": "xmixins",
   "repo": "mytcer/xmixins",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "styles": [
     "index.less",
     "index.scss",

@@ -1,4 +1,4 @@
-### v0.5.0（ongoing）
+### v0.5.0
 
 | mixin name | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
@@ -7,6 +7,7 @@
 |x-perspective-origin | 10+ | √ | √ | √ | √ | √ |
 |x-transform-origin | 9+ | √ | √ | √ | √ | √ |
 |x-transform-style | X | √ | √ | √ | √ | √ |
+|x-radial-gradient | 10+ | √ | √ | √ | √ | √ |
 
 <br>
 

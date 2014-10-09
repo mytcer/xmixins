@@ -1,0 +1,14 @@
+#x-radial-gradient-example span {
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 5px auto;
+	<%=include%>x-border-radius(50px);
+
+	&.circle {
+		<%=include%>x-radial-gradient(red 5%, green 50%);	
+	}
+	&.ellipse {
+		<%=include%>x-radial-gradient(ellipse at top left, red 5%, green 50%);	
+	}
+}

@@ -431,6 +431,25 @@
 #x-placeholder-example input::-webkit-input-placeholder {
   color: red; }
 
+#x-radial-gradient-example span {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 5px auto;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px; }
+  #x-radial-gradient-example span.circle {
+    background: -webkit-radial-gradient(red 5%, green 50%);
+    background: -moz-radial-gradient(red 5%, green 50%);
+    background: -ms-radial-gradient(red 5%, green 50%);
+    background: radial-gradient(red 5%, green 50%); }
+  #x-radial-gradient-example span.ellipse {
+    background: -webkit-radial-gradient(ellipse at top left, red 5%, green 50%);
+    background: -moz-radial-gradient(ellipse at top left, red 5%, green 50%);
+    background: -ms-radial-gradient(ellipse at top left, red 5%, green 50%);
+    background: radial-gradient(ellipse at top left, red 5%, green 50%); }
+
 #x-text-overflow-example {
   overflow: hidden;
   text-overflow: ellipsis;

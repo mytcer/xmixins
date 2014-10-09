@@ -67,6 +67,7 @@
 |x-inline-block | 6+ | √ | √ | √ | √ | √ |
 |x-font-face | 6+ | √ | √ | √ | √ | √ |
 |x-linear-gradient | 6+ | √ | √ | √ | √ | √ |
+|x-radial-gradient | 10+ | √ | √ | √ | √ | √ |
 |x-transform | 9+ | √ | √ | √ | √ | √ |
 |x-transform-origin | 9+ | √ | √ | √ | √ | √ |
 |x-transform-style | X | √ | √ | √ | √ | √ |

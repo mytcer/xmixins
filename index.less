@@ -284,6 +284,13 @@
 		color: @color; 
 	}
 }
+.x-radial-gradient(...) {
+	@param: ~`"@{arguments}".toString().replace(/[\[\]]/g, "")`;
+    background: -webkit-radial-gradient(@param);
+    background: -moz-radial-gradient(@param);
+    background: -ms-radial-gradient(@param);
+    background: radial-gradient(@param);	
+}
 .x-text-overflow(@cutway: clip) {
 	overflow: hidden;
   	text-overflow: @cutway;

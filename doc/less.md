@@ -578,6 +578,41 @@
 
 <br>
 
+### **x-radial-gradient**
+
+> Description：CSS3 radial gradient
+
+**1. usage**
+
+	syntax：.x-radial-gradient(...);
+
+	params：
+
+		* ... --- [<shape> | <size>]? [at <position>]?, <color-stop-list>
+
+			* <shape>：circle | ellipse | [length | %]{1,2} ，default to circle
+
+			* <size>：closest-side | closest-corner | farthest-side | farthest-corner | length | [length | %]{2}，default to farthest-corner
+
+			* <position>： [length | % | left | center | right ]? [length> | % | top | center | bottom ]?，default to center
+
+			* [color-stop-list]：color [length | %]? [, color [length | %]?]*
+
+**2. example**
+
+	div {
+		.x-radial-gradient(circle, red, green);
+	}
+
+**3. source**
+
+* [http://www.w3cplus.com/css3/new-css3-radial-gradient.html](http://www.w3cplus.com/css3/new-css3-radial-gradient.html)
+* [http://dev.w3.org/csswg/css-images-3/#radial-gradients](http://dev.w3.org/csswg/css-images-3/#radial-gradients)
+
+
+
+<br>
+
 ### **x-text-overflow**
 
 > Description：text-overflow
