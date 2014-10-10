@@ -2,7 +2,7 @@
 
 # XMixins ![xmixins version](https://badge.fury.io/bo/xmixins.png)
 
-XMixins is a super CSS mixin library, it has four features: 
+XMixins is a super CSS mixin library, it has five features: 
 
 1. Compatible major CSS preprocessor (LESS, SASS and Stylus) .
 
