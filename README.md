@@ -2,7 +2,15 @@
 
 # XMixins ![xmixins version](https://badge.fury.io/bo/xmixins.png)
 
-> Introduction：XMixins is a css mixin library, which compatible with LESS, SASS and Stylus at the same time. It can provide the same mixin for different CSS preprocessor, and follow the CSS3 specification, ensure consistency and fairness of the use!
+XMixins is a css mixin library, which compatible with LESS, SASS and Stylus . It has four major characteristics: 
+
+* Compatible major CSS preprocessor (LESS, SASS and Stylus) .
+
+* Provide the same mixin for different CSS preprocessor .
+
+* The CSS3 mixins full compliance with CSS3 specification .
+
+* Compared to the Compass, it is very easy to install .
 
 <br />
 
@@ -17,9 +25,15 @@
             -- index.scss
             -- index.styl
                 
-(2) import xmixins to your style file（example：add linear gradient to the target element）
-    
+(2) import xmixins to your style file
+
 	@import "bower_components/xmixins/index";
+
+<br>
+
+### 2. Example
+
+Add linear gradient to the target element: 
 
 	// for less
 	div {
@@ -38,7 +52,7 @@
 
 <br />
 
-### 2. Doc for mixins
+### 3. Doc for mixins
 
 * [doc for less](./doc/less.md)
 * [doc for sass](./doc/sass.md)
@@ -46,7 +60,7 @@
 
 <br />
 
-### 3. Released mixins
+### 4. Released mixins
 
 **(1) CSS3**
 
@@ -90,7 +104,7 @@
 
 <br>
 
-### 4. Who is using XMixins ?
+### 5. Who is using ?
 
 ![taobao](./images/taobao.png)
 
