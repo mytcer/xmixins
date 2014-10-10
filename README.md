@@ -2,15 +2,15 @@
 
 # XMixins ![xmixins version](https://badge.fury.io/bo/xmixins.png)
 
-XMixins is a css mixin library, which compatible with LESS, SASS and Stylus . It has four major characteristics: 
+XMixins is a super CSS mixin library, it has four features: 
 
-* Compatible major CSS preprocessor (LESS, SASS and Stylus) .
+1. Compatible major CSS preprocessor (LESS, SASS and Stylus) .
 
-* Provide the same mixin for different CSS preprocessor .
+2. Provide the same mixin for different CSS preprocessor .
 
-* The CSS3 mixins full compliance with CSS3 specification .
+3. The CSS3 mixins full compliance with CSS3 specification .
 
-* Compared to the Compass, it is very easy to install .
+4. Installation is very easy (compared to Compass) .
 
 <br />
 
