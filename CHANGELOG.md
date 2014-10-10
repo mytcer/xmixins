@@ -1,6 +1,6 @@
 ### v0.5.0
 
-| mixin name | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
+| mixin name | IE | Chrome | Safari | Firefox | Opera | IOS
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 |x-backface-visibility | 10+ | √ | √ | √ | √ | X |
 |x-perspective | 10+ | √ | √ | √ | √ | √ |
@@ -13,7 +13,7 @@
 
 ### v0.4.0
 
-| mixin name | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
+| mixin name | IE | Chrome | Safari | Firefox | Opera | IOS
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 |x-appearance | X | √ | √ | √ | √ | √ |
 |x-background-retina | 6+ | √ | √ | √ | √ | √ |
@@ -28,7 +28,7 @@
 
 ### v0.3.0
 
-| mixin name | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
+| mixin name | IE | Chrome | Safari | Firefox | Opera | IOS
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 |x-transform | 9+ | √ | √ | √ | √ | √ |
 |x-transition | 10+ | √ | √ | √ | √ | √ |
@@ -44,7 +44,7 @@
 
 ### v0.2.0
 
-| mixin name | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
+| mixin name | IE | Chrome | Safari | Firefox | Opera | IOS
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 |x-grayscale | 6~9 | √ | √ | √ | √ | √ |
 
@@ -52,7 +52,7 @@
 
 ### v0.1.0
 
-| mixin name | IE | Chrome | Safari | Firefox | Opera | IOS 7.1.2
+| mixin name | IE | Chrome | Safari | Firefox | Opera | IOS
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 |x-border-radius | 9+ | √ | √ | √ | √ | √ |
 |x-border-triangle | 6+ | √ | √ | √ | √ | √ |
