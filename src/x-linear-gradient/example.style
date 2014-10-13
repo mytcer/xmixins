@@ -1,13 +1,35 @@
 #x-linear-gradient-example {
-	p {
-		height: 50px;
+	.list {
+		<%=include%>x-inline-block();
+		p {
+			width: 80px;
+			height: 30px;
+			margin: 2px;
+		}
 	}
 
-	.horizontal {
-		<%=include%>x-linear-gradient(to right, #f00, green);		
+	.totop {
+		<%=include%>x-linear-gradient(to top, #f00, green);		
 	}
-
-	.vertical {
-		<%=include%>x-linear-gradient(to bottom, #f00, green);
+	.toright {
+		<%=include%>x-linear-gradient(to right, #f00, green);
+	}
+	.tobottom {
+		<%=include%>x-linear-gradient(#f00, green);
+	}
+	.toleft {
+		<%=include%>x-linear-gradient(to left, #f00, green);
+	}
+	.deg0 {
+		<%=include%>x-linear-gradient(0deg, #f00 30%, green 60%);		
+	}
+	.deg90 {
+		<%=include%>x-linear-gradient(90deg, #f00 30%, green 60%);
+	}
+	.deg180 {
+		<%=include%>x-linear-gradient(180deg, #f00 30%, green 60%);
+	}
+	.deg270 {
+		<%=include%>x-linear-gradient(270deg, #f00 30%, green 60%);
 	}
 }

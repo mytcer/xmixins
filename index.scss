@@ -218,25 +218,54 @@
     *display: inline;
     *zoom: 1;
 }
-@mixin x-linear-gradient($direction, $startColor, $endColor) {
-	$xdirection: null;
-	$ie-direction: null;
+@mixin x-linear-gradient($arguments...) {
 
-	@if ("#{$direction}" == "to bottom") {
-		$xdirection: top;
-		$ie-direction: 0;
+	@if (length($arguments) == 2) {
+		$arguments: join(unquote("to bottom"), $arguments, comma);
 	}
-	@if ("#{$direction}" == "to right") {
-		$xdirection: left;
-		$ie-direction: 1;
+
+	$map: ("to top": bottom, 
+			"to right": left, 
+			"to bottom": top, 
+			"to left": right,
+			"0deg": bottom,
+			"90deg": left,
+			"180deg": top,
+			"270deg": right);
+
+	$iemap: ("to top": 0, 
+			"to right": 1, 
+			"to bottom": 0, 
+			"to left": 1,
+			"0deg": 0,
+			"90deg": 1,
+			"180deg": 0,
+			"270deg": 1);
+
+	$direction: inspect(nth($arguments, 1));
+	$colorlist: str-slice(inspect($arguments), str-length($direction) + 2);
+	$wkdirection: map-get($map, $direction);
+	$iedirection: map-get($iemap, $direction);
+	$startColor: null;
+	$endColor: null;
+
+	@if ($wkdirection == top) {
+		$startColor: nth(nth($arguments, 2), 1);
+		$endColor: nth(nth($arguments, 3), 1);
+	} @else if ($wkdirection == left) {
+		$startColor: nth(nth($arguments, 2), 1);
+		$endColor: nth(nth($arguments, 3), 1);
+	} @else if ($wkdirection == bottom) {
+		$startColor: nth(nth($arguments, 3), 1);
+		$endColor: nth(nth($arguments, 2), 1);
+	} @else if ($wkdirection == right) {
+		$startColor: nth(nth($arguments, 3), 1);
+		$endColor: nth(nth($arguments, 2), 1);
 	}
 	
-    background: -webkit-linear-gradient($xdirection, $startColor, $endColor);
-    background: -moz-linear-gradient($xdirection, $startColor, $endColor);
-    background: -ms-linear-gradient($xdirection, $startColor, $endColor);
-    background: -o-linear-gradient($xdirection, $startColor, $endColor);
-    background: linear-gradient($direction, $startColor, $endColor);
-    filter: unquote("progid:DXImageTransform.Microsoft.gradient(startcolorstr=#{$startColor},endcolorstr=#{$endColor},gradientType=#{$ie-direction})");
+    background: -webkit-linear-gradient($wkdirection, $colorlist);
+    background: linear-gradient($arguments);
+    filter: unquote("progid:DXImageTransform.Microsoft.gradient(startcolorstr=#{$startColor},endcolorstr=#{$endColor},gradientType=#{$iedirection})");
 }
 @mixin x-min-height($height) {
 	min-height: $height;

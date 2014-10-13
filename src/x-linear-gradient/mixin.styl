@@ -1,20 +1,49 @@
-x-linear-gradient($direction, $startColor, $endColor) {
-	$xdirection=null;
-	$ie-direction=null;
+x-linear-gradient() {
+	if (length(arguments) == 2) {
+		unshift(arguments, unquote("to bottom"));
+	}
 
-	if (join(",", $direction) == "to,bottom") {
-		$xdirection=top;
-		$ie-direction=0;		
+	$map = {
+		"to top": bottom, 
+		"to right": left, 
+		"to bottom": top, 
+		"to left": right,
+		"0deg": bottom,
+		"90deg": left,
+		"180deg": top,
+		"270deg": right
+	};
+	$iemap = {
+		"top": 0, 
+		"right": 1,
+		"bottom": 0, 
+		"left": 1 
+	};
+
+	$direction = arguments[0];
+	$param = unquote(join(',', arguments));
+
+	$wkdirection = $map["" + $direction + ""];
+	arguments[0] = $wkdirection;
+	$wkparam = unquote(join(',', arguments));
+
+	$iedirection = $iemap["" + $wkdirection + ""];
+
+	if ($wkdirection == top) {
+		$ieStartColor = arguments[1][0];
+		$ieEndColor = arguments[2][0];
+	} else if ($wkdirection == left) {
+		$ieStartColor = arguments[1][0];
+		$ieEndColor = arguments[2][0];
+	} else if ($wkdirection == bottom) {
+		$ieStartColor = arguments[2][0];
+		$ieEndColor = arguments[1][0];
+	} else if ($wkdirection == right) {
+		$ieStartColor = arguments[2][0];
+		$ieEndColor = arguments[1][0];
 	}
-	if (join(",", $direction) == "to,right") {
-		$xdirection=left;
-		$ie-direction=1;		
-	}
-	
-    background: -webkit-linear-gradient($xdirection, $startColor, $endColor);
-    background: -moz-linear-gradient($xdirection, $startColor, $endColor);
-    background: -ms-linear-gradient($xdirection, $startColor, $endColor);
-    background: -o-linear-gradient($xdirection, $startColor, $endColor);
-    background: linear-gradient($direction, $startColor, $endColor);
-    filter unquote("progid:DXImageTransform.Microsoft.gradient(startcolorstr=" + $startColor + ",endcolorstr=" + $endColor + ",gradientType=" + $ie-direction + ")");
+
+    background: -webkit-linear-gradient($wkparam);
+    background: linear-gradient($param);
+	filter unquote("progid:DXImageTransform.Microsoft.gradient(startcolorstr=" + $ieStartColor + ",endcolorstr=" + $ieEndColor + ",gradientType=" + $iedirection + ")");
 }

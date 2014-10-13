@@ -371,24 +371,55 @@
   padding: 5px;
   background: #ccc;
 }
-#x-linear-gradient-example p {
-  height: 50px;
+#x-linear-gradient-example .list {
+  display: inline-block;
+  *display: inline;
+  *zoom: 1;
 }
-#x-linear-gradient-example .horizontal {
-  background: -webkit-linear-gradient(left, #ff0000, #008000);
-  background: -moz-linear-gradient(left, #ff0000, #008000);
-  background: -ms-linear-gradient(left, #ff0000, #008000);
-  background: -o-linear-gradient(left, #ff0000, #008000);
+#x-linear-gradient-example .list p {
+  width: 80px;
+  height: 30px;
+  margin: 2px;
+}
+#x-linear-gradient-example .totop {
+  filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#008000,endcolorstr=#ff0000,gradientType=0);
+  background: -webkit-linear-gradient(bottom, #ff0000, #008000);
+  background: linear-gradient(to top, #ff0000, #008000);
+}
+#x-linear-gradient-example .toright {
   filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ff0000,endcolorstr=#008000,gradientType=1);
+  background: -webkit-linear-gradient(left, #ff0000, #008000);
   background: linear-gradient(to right, #ff0000, #008000);
 }
-#x-linear-gradient-example .vertical {
-  background: -webkit-linear-gradient(top, #ff0000, #008000);
-  background: -moz-linear-gradient(top, #ff0000, #008000);
-  background: -ms-linear-gradient(top, #ff0000, #008000);
-  background: -o-linear-gradient(top, #ff0000, #008000);
+#x-linear-gradient-example .tobottom {
   filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ff0000,endcolorstr=#008000,gradientType=0);
-  background: linear-gradient(to bottom, #ff0000, #008000);
+  background: -webkit-linear-gradient(#ff0000, #008000);
+  background: linear-gradient(#ff0000, #008000);
+}
+#x-linear-gradient-example .toleft {
+  filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#008000,endcolorstr=#ff0000,gradientType=1);
+  background: -webkit-linear-gradient(right, #ff0000, #008000);
+  background: linear-gradient(to left, #ff0000, #008000);
+}
+#x-linear-gradient-example .deg0 {
+  filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#008000,endcolorstr=#ff0000,gradientType=0);
+  background: -webkit-linear-gradient(bottom, #ff0000 30%, #008000 60%);
+  background: linear-gradient(0deg, #ff0000 30%, #008000 60%);
+}
+#x-linear-gradient-example .deg90 {
+  filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ff0000,endcolorstr=#008000,gradientType=1);
+  background: -webkit-linear-gradient(left, #ff0000 30%, #008000 60%);
+  background: linear-gradient(90deg, #ff0000 30%, #008000 60%);
+}
+#x-linear-gradient-example .deg180 {
+  filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#ff0000,endcolorstr=#008000,gradientType=0);
+  background: -webkit-linear-gradient(top, #ff0000 30%, #008000 60%);
+  background: linear-gradient(180deg, #ff0000 30%, #008000 60%);
+}
+#x-linear-gradient-example .deg270 {
+  filter: progid:DXImageTransform.Microsoft.gradient(startcolorstr=#008000,endcolorstr=#ff0000,gradientType=1);
+  background: -webkit-linear-gradient(right, #ff0000 30%, #008000 60%);
+  background: linear-gradient(270deg, #ff0000 30%, #008000 60%);
 }
 #x-min-height-example {
   height: auto;

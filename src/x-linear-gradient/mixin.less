@@ -1,22 +1,54 @@
-.x-linear-gradient(@direction, @startColor, @endColor) {
+.x-linear-gradient(...) {
 
-	.x-if-simulater () when ("@{direction}" = "to bottom") {
-	    background: -webkit-linear-gradient(top, @startColor, @endColor);
-	    background: -moz-linear-gradient(top, @startColor, @endColor);
-	    background: -ms-linear-gradient(top, @startColor, @endColor);
-	    background: -o-linear-gradient(top, @startColor, @endColor);
-	    filter: ~"progid:DXImageTransform.Microsoft.gradient(startcolorstr=@{startColor},endcolorstr=@{endColor},gradientType=0)";
+	@params: ~`"@{arguments}".toString().replace(/[\[\]]/g, "")`;
+	@webkitParams: ~`"@{arguments}".toString().replace(/[\[\]]/g, "")
+						.replace(/to top|\b0deg\b/, "bottom")
+						.replace(/to right|\b90deg\b/, "left")
+						.replace(/to bottom|\b180deg\b/, "top")
+						.replace(/to left|\b270deg\b/, "right")`;
+
+	@len: length(@arguments);
+
+	.x-if(@arguments) when(@len = 2) {
+		@startColor: extract(extract(@arguments, 1), 1);
+		@endColor: extract(extract(@arguments, 2), 1);
+	    filter: ~`"progid:DXImageTransform.Microsoft.gradient(startcolorstr=@{startColor},endcolorstr=@{endColor},gradientType=0)"`;		
 	}
 
-	.x-if-simulater () when ("@{direction}" = "to right") {
-	    background: -webkit-linear-gradient(left, @startColor, @endColor);
-	    background: -moz-linear-gradient(left, @startColor, @endColor);
-	    background: -ms-linear-gradient(left, @startColor, @endColor);
-	    background: -o-linear-gradient(left, @startColor, @endColor);
-	    filter: ~"progid:DXImageTransform.Microsoft.gradient(startcolorstr=@{startColor},endcolorstr=@{endColor},gradientType=1)";
+	.x-if(@arguments) when(@len > 2) {
+		@direction: extract(@arguments, 1);
+		@startColor: extract(extract(@arguments, 2), 1);
+		@endColor: extract(extract(@arguments, 3), 1);
+
+		.x-subif(@startColor, @endColor) when("@{direction}" = "to top") {
+		    filter: ~`"progid:DXImageTransform.Microsoft.gradient(startcolorstr=@{endColor},endcolorstr=@{startColor},gradientType=0)"`;
+		}
+		.x-subif(@startColor, @endColor) when("@{direction}" = "to right") {
+		    filter: ~`"progid:DXImageTransform.Microsoft.gradient(startcolorstr=@{startColor},endcolorstr=@{endColor},gradientType=1)"`;
+		}
+		.x-subif(@startColor, @endColor) when("@{direction}" = "to bottom") {
+		    filter: ~`"progid:DXImageTransform.Microsoft.gradient(startcolorstr=@{startColor},endcolorstr=@{endColor},gradientType=0)"`;
+		}
+		.x-subif(@startColor, @endColor) when("@{direction}" = "to left") {
+		    filter: ~`"progid:DXImageTransform.Microsoft.gradient(startcolorstr=@{endColor},endcolorstr=@{startColor},gradientType=1)"`;
+		}
+		.x-subif(@startColor, @endColor) when(@direction = 0deg) {
+		    filter: ~`"progid:DXImageTransform.Microsoft.gradient(startcolorstr=@{endColor},endcolorstr=@{startColor},gradientType=0)"`;
+		}
+		.x-subif(@startColor, @endColor) when(@direction = 90deg) {
+		    filter: ~`"progid:DXImageTransform.Microsoft.gradient(startcolorstr=@{startColor},endcolorstr=@{endColor},gradientType=1)"`;
+		}
+		.x-subif(@startColor, @endColor) when(@direction = 180deg) {
+		    filter: ~`"progid:DXImageTransform.Microsoft.gradient(startcolorstr=@{startColor},endcolorstr=@{endColor},gradientType=0)"`;
+		}
+		.x-subif(@startColor, @endColor) when(@direction = 270deg) {
+		    filter: ~`"progid:DXImageTransform.Microsoft.gradient(startcolorstr=@{endColor},endcolorstr=@{startColor},gradientType=1)"`;
+		}
+		.x-subif(@startColor, @endColor);
 	}
 
-	.x-if-simulater();
+	.x-if(@arguments);
 
-    background: linear-gradient(@direction, @startColor, @endColor);
+	background: -webkit-linear-gradient(@webkitParams);
+	background: linear-gradient(@params);
 }
