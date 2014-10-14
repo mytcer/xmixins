@@ -425,25 +425,42 @@
 
 ### **x-linear-gradient**
 
-> Description：css3 linear-gradient
+> Description：CSS3 linear-gradient
 
 **1. usage**
 
-	syntax：.x-linear-gradient(@direction, @startColor, @endColor);
+	syntax：.x-linear-gradient(...);
 
 	params：
 
-		* @direction --- to bottom | to right
+		* ... --- [<angle> | to <side-or-corner>]?, <color-stop-list>
+
+			* <angle>：such as 45deg 
+
+			> Note: The IE6~9 only support "0deg, 90deg, 180deg, 270deg" .
+
+			* to <side-or-corner>：to [left | right] || [top | bottom], default is "to bottom"
+
+			> Note：The IE6~9 noly support "to top, to right, to bottom, to left" .
+
+			* <color-stop-list>：color [length | %]? [, color [length | %]?]*
+
+			> Note: The IE6~9 only support set two color value .
 
 **2. example**
 
 	div {
 		.x-linear-gradient(to bottom, #000, #fff);
 	}
+	div {
+		.x-linear-gradient(90deg, #000 30%, #fff 60%);	
+	}
 
 **3. source**
 
 * [http://css-tricks.com/css3-gradients/](http://css-tricks.com/css3-gradients/)
+* [https://developer.mozilla.org/zh-CN/docs/Web/CSS/linear-gradient](https://developer.mozilla.org/zh-CN/docs/Web/CSS/linear-gradient)
+* [http://dev.w3.org/csswg/css-images-3/#funcdef-linear-gradient](http://dev.w3.org/csswg/css-images-3/#funcdef-linear-gradient)
 
 
 <br>
