@@ -104,9 +104,3 @@ Add linear gradient to the target element:
 |x-grayscale | 6~9 | √ | √ | √ | √ | √ | ? |
 |x-placeholder | 10+ | √ | √ | √ | √ | √ | ? |
 
-<br>
-
-### 5. Who is using ?
-
-![taobao](./images/taobao.png)
-
